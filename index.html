@@ -18,13 +18,17 @@
 <header class="header">
   <div class="container header__inner">
     <a href="#" class="logo" aria-label="Xnote — الصفحة الرئيسية">
-      <span class="logo__mark">X</span><span class="logo__text">note</span><span class="logo__dot" aria-hidden="true"></span>
+      <img src="assets/logo.png" alt="Xnote" width="471" height="215" class="logo__img">
     </a>
-    <nav class="nav" aria-label="التنقل الرئيسي">
-      <a href="#method">الطريقة</a>
-      <a href="#faq">الأسئلة</a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="#try" class="nav__link">جرب المنصة</a>
+      <a href="#faq" class="nav__link">الأسئلة الشائعة</a>
+      <a href="#voices" class="nav__link">قالوا عنا</a>
+      <a href="#plans" class="btn btn--primary btn--sm nav__cta">ابدأ التعلم</a>
     </nav>
-    <a href="#start" class="btn btn--primary btn--sm">ابدأ مع Xnote</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="القائمة">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path class="menu-btn__open" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-btn__close" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </div>
 </header>
 
@@ -32,8 +36,10 @@
 
 <!-- ========== 1. Hero ========== -->
 <section class="hero" aria-labelledby="hero-title">
+  <svg class="blob blob--hero" viewBox="0 0 600 520" aria-hidden="true"><path d="M92 214C60 118 168 30 292 40c118 10 214 70 258 168 42 94-2 214-92 258-96 46-208 40-300-18C82 400 118 292 92 214Z"/></svg>
   <div class="container hero__grid">
     <div class="hero__copy reveal">
+      <svg class="doodle doodle--hero" viewBox="0 0 120 40" aria-hidden="true"><path d="M4 30 C20 8, 40 8, 52 26 S84 40, 96 18 S112 6, 116 10"/></svg>
       <h1 id="hero-title" class="h1">
         لا تحفظ الإنجليزية فقط.<br>
         <span class="underline-hand">ابنِها خطوة بخطوة.
@@ -46,7 +52,7 @@
         في Xnote تتعلم الكلمات والجمل التي تحتاجها، ثم تراها في محتوى تستطيع فهمه، تستمع إليها، وبعدها تستخدم ما تعلمته في ممارسة حقيقية.
       </p>
       <div class="hero__cta">
-        <a href="#start" class="btn btn--primary btn--lg">ابدأ مع Xnote</a>
+        <a href="#plans" class="btn btn--primary btn--lg">ابدأ مع Xnote</a>
         <p class="hero__note">مصممة للمبتدئين الناطقين بالعربية.</p>
       </div>
     </div>
@@ -93,6 +99,30 @@
   </div>
 </section>
 
+<!-- ========== Video ========== -->
+<section class="section section--video" id="video" aria-labelledby="video-title">
+  <div class="container container--narrow">
+    <div class="section__head section__head--center reveal">
+      <h2 id="video-title" class="h2">تعرّف على أسلوب Xnote في التعليم</h2>
+      <p class="sub">دقيقتان تشرحان لك كيف تسير الكلمة من الدفتر إلى لسانك.</p>
+    </div>
+    <div class="video reveal">
+      <span class="hand video__hand" dir="ltr">watch this
+        <svg class="video__arrow" viewBox="0 0 60 50" aria-hidden="true"><path d="M4 6 C20 10, 40 20, 52 42 M40 38 L52 43 L50 30"/></svg>
+      </span>
+      <div class="video__frame paper">
+        <!-- ضع رابط الفيديو التعريفي هنا (YouTube embed أو ملف mp4) -->
+        <div class="video__placeholder" id="videoPlaceholder" data-embed="">
+          <button class="video__play" type="button" aria-label="تشغيل الفيديو">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="video__label">الفيديو التعريفي</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ========== 2. Problem ========== -->
 <section class="section section--cream" aria-labelledby="problem-title">
   <div class="container container--narrow">
@@ -116,26 +146,33 @@
     </div>
     <ol class="steps">
       <li class="step paper reveal">
-        <span class="step__num">01</span>
+        <span class="step__num"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 C48 4, 56 18, 54 32 S42 56, 28 54 S4 42, 6 28 S16 8, 34 6"/></svg>01</span>
         <h3 class="h3">تعلّم</h3>
         <p>كلمات وجمل شائعة تناسب مستوى المبتدئ.</p>
       </li>
       <li class="step paper reveal">
-        <span class="step__num">02</span>
+        <span class="step__num"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 C48 4, 56 18, 54 32 S42 56, 28 54 S4 42, 6 28 S16 8, 34 6"/></svg>02</span>
         <h3 class="h3">افهم</h3>
         <p>ترى ما تعلمته داخل قصص ومقالات بسيطة.</p>
       </li>
       <li class="step paper reveal">
-        <span class="step__num">03</span>
+        <span class="step__num"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 C48 4, 56 18, 54 32 S42 56, 28 54 S4 42, 6 28 S16 8, 34 6"/></svg>03</span>
         <h3 class="h3">استمع</h3>
         <p>محتوى صوتي يعتمد على اللغة التي تعلمتها.</p>
       </li>
       <li class="step paper reveal">
-        <span class="step__num">04</span>
+        <span class="step__num"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6 C48 4, 56 18, 54 32 S42 56, 28 54 S4 42, 6 28 S16 8, 34 6"/></svg>04</span>
         <h3 class="h3">مارس</h3>
         <p>تستخدم ما تعلمته مع معلم حقيقي.</p>
       </li>
     </ol>
+
+    <ul class="stats reveal" dir="rtl">
+      <li class="stat"><span class="stat__num">+1000</span><span class="stat__label">كلمة وجملة شائعة</span></li>
+      <li class="stat"><span class="stat__num">4</span><span class="stat__label">خطوات، بالترتيب</span></li>
+      <li class="stat"><span class="stat__num">1:1</span><span class="stat__label">جلسة مع معلم حقيقي</span></li>
+      <li class="stat"><span class="stat__num">30</span><span class="stat__label">دقيقة ممارسة</span></li>
+    </ul>
   </div>
 </section>
 
@@ -189,7 +226,7 @@
 </section>
 
 <!-- ========== 5. Inside Xnote ========== -->
-<section class="section" aria-labelledby="inside-title">
+<section class="section" id="try" aria-labelledby="inside-title">
   <div class="container">
     <div class="section__head reveal">
       <h2 id="inside-title" class="h2">ماذا تجد داخل Xnote؟</h2>
@@ -230,7 +267,7 @@
 
       <div class="phone reveal reveal--delay" aria-hidden="true">
         <div class="phone__screen">
-          <div class="phone__top"><span class="logo logo--sm"><span class="logo__mark">X</span>note</span><span class="phone__pill">اليوم</span></div>
+          <div class="phone__top"><img src="assets/logo.png" alt="" class="phone__logo" width="471" height="215"><span class="phone__pill">اليوم</span></div>
           <div class="phone__card">
             <span class="phone__label">كلمة جديدة</span>
             <span class="phone__word" dir="ltr">hungry</span>
@@ -283,7 +320,7 @@
     <div class="section__head reveal">
       <h2 id="who-title" class="h2">للمبتدئ الذي لا يعرف من أين يبدأ.</h2>
     </div>
-    <ul class="stickies">
+    <ul class="stickies stickies--blobs">
       <li class="sticky reveal"><p>“أعرف كلمات، لكن يصعب علي استخدامها.”</p></li>
       <li class="sticky reveal"><p>“أبدأ التعلم ثم لا أعرف ماذا أتعلم بعد ذلك.”</p></li>
       <li class="sticky reveal"><p>“القصص والمقاطع الإنجليزية غالبًا أعلى من مستواي.”</p></li>
@@ -305,7 +342,7 @@
 </section>
 
 <!-- ========== 9. Testimonials ========== -->
-<section class="section section--cream" aria-labelledby="voices-title">
+<section class="section section--cream" id="voices" aria-labelledby="voices-title">
   <div class="container">
     <div class="section__head reveal">
       <h2 id="voices-title" class="h2">ما الذي تغيّر؟</h2>
@@ -359,12 +396,63 @@
   </div>
 </section>
 
+<!-- ========== Plans ========== -->
+<section class="section section--cream" id="plans" aria-labelledby="plans-title">
+  <svg class="blob blob--plans" viewBox="0 0 600 520" aria-hidden="true"><path d="M92 214C60 118 168 30 292 40c118 10 214 70 258 168 42 94-2 214-92 258-96 46-208 40-300-18C82 400 118 292 92 214Z"/></svg>
+  <div class="container">
+    <div class="section__head section__head--center reveal">
+      <h2 id="plans-title" class="h2">ابدأ التعلم</h2>
+      <p class="sub">اختر الطريقة التي تناسبك. تبدأ بالكلمات، وتنتهي بالكلام.</p>
+    </div>
+    <!-- الأسعار والمزايا أدناه مؤقتة — تُستبدل بالباقات الفعلية من xnote.net -->
+    <ul class="plans">
+      <li class="plan paper reveal">
+        <h3 class="plan__name">المنصة</h3>
+        <p class="plan__desc">تعلّم وراجع واقرأ واستمع، بوتيرتك.</p>
+        <p class="plan__price"><span class="plan__amount">99</span><span class="plan__cur">ر.س</span><span class="plan__per">/ شهريًا</span></p>
+        <ul class="plan__list">
+          <li>+1000 كلمة وجملة مرتبة بالتسلسل</li>
+          <li>قصص ومقالات بمستواك</li>
+          <li>بودكاست مبني على كلماتك</li>
+          <li>مراجعة يومية</li>
+        </ul>
+        <a href="#" class="btn btn--outline btn--block">ابدأ الآن</a>
+      </li>
+      <li class="plan plan--featured paper reveal">
+        <span class="plan__badge">الأكثر اختيارًا</span>
+        <h3 class="plan__name">المنصة + الممارسة</h3>
+        <p class="plan__desc">كل ما في المنصة، مع جلسات فردية لتستخدم ما تعلمته.</p>
+        <p class="plan__price"><span class="plan__amount">299</span><span class="plan__cur">ر.س</span><span class="plan__per">/ شهريًا</span></p>
+        <ul class="plan__list">
+          <li>كل مزايا المنصة</li>
+          <li>4 جلسات فردية 1:1 شهريًا</li>
+          <li>30 دقيقة مع معلم حقيقي</li>
+          <li>الجلسة مبنية على ما تعلمته</li>
+        </ul>
+        <a href="#" class="btn btn--primary btn--block">ابدأ الآن</a>
+      </li>
+      <li class="plan paper reveal">
+        <h3 class="plan__name">سنوي</h3>
+        <p class="plan__desc">للجاد الذي يريد الاستمرار سنة كاملة.</p>
+        <p class="plan__price"><span class="plan__amount">2490</span><span class="plan__cur">ر.س</span><span class="plan__per">/ سنويًا</span></p>
+        <ul class="plan__list">
+          <li>كل مزايا المنصة + الممارسة</li>
+          <li>شهران مجانًا</li>
+          <li>أولوية في حجز الجلسات</li>
+        </ul>
+        <a href="#" class="btn btn--outline btn--block">ابدأ الآن</a>
+      </li>
+    </ul>
+    <p class="plans__note reveal">تقدر تبدأ بالمنصة وحدها، وتضيف الجلسات متى ما صار عندك ما تقوله.</p>
+  </div>
+</section>
+
 <!-- ========== Final CTA ========== -->
 <section class="final" id="start" aria-labelledby="final-title">
   <div class="container container--narrow final__inner reveal">
     <h2 id="final-title" class="h2 final__title">ابدأ ببناء لغتك خطوة بخطوة.</h2>
     <p class="final__text">لا تحتاج أن تعرف كل شيء قبل أن تبدأ.<br>تحتاج فقط أن تعرف ما الخطوة التالية.</p>
-    <a href="#" class="btn btn--primary btn--lg">ابدأ مع Xnote</a>
+    <a href="#plans" class="btn btn--primary btn--lg">ابدأ مع Xnote</a>
     <p class="hand final__hand" dir="ltr">Small steps every day.</p>
   </div>
 </section>
@@ -373,11 +461,12 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <span class="logo logo--sm"><span class="logo__mark">X</span>note</span>
+    <img src="assets/logo.png" alt="Xnote" class="footer__logo" width="471" height="215">
     <nav aria-label="روابط الصفحة">
-      <a href="#method">الطريقة</a>
-      <a href="#faq">الأسئلة</a>
-      <a href="#">تواصل معنا</a>
+      <a href="#try">جرب المنصة</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#voices">قالوا عنا</a>
+      <a href="#plans">ابدأ التعلم</a>
     </nav>
     <span class="footer__copy">© 2026 Xnote</span>
   </div>
@@ -385,7 +474,7 @@
 
 <!-- Mobile sticky CTA -->
 <div class="mobile-cta" id="mobileCta">
-  <a href="#start" class="btn btn--primary btn--block">ابدأ مع Xnote</a>
+  <a href="#plans" class="btn btn--primary btn--block">ابدأ مع Xnote</a>
 </div>
 
 <script src="script.js" defer></script>

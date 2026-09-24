@@ -34,3 +34,33 @@
     if (d.open) items.forEach((o) => { if (o !== d) o.open = false; });
   }));
 })();
+
+// Mobile menu
+(function () {
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  if (!btn || !nav) return;
+  const close = () => { nav.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+
+// Intro video: set data-embed on #videoPlaceholder to a YouTube embed URL or an .mp4 path
+(function () {
+  const ph = document.getElementById('videoPlaceholder');
+  if (!ph) return;
+  const src = ph.dataset.embed;
+  const play = ph.querySelector('.video__play');
+  play.addEventListener('click', () => {
+    if (!src) return;
+    const isFile = /\.(mp4|webm)(\?|$)/i.test(src);
+    const el = document.createElement(isFile ? 'video' : 'iframe');
+    if (isFile) { el.src = src; el.controls = true; el.autoplay = true; el.playsInline = true; }
+    else { el.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1'; el.allow = 'autoplay; encrypted-media; picture-in-picture'; el.allowFullscreen = true; el.title = 'الفيديو التعريفي لـ Xnote'; }
+    ph.replaceWith(el);
+  });
+})();
