@@ -21,7 +21,7 @@
       <img src="assets/logo.png" alt="Xnote" width="471" height="215" class="logo__img">
     </a>
     <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
-      <a href="#try" class="nav__link">جرب المنصة</a>
+      <a href="https://xnote.net/signup" class="nav__link">جرب المنصة</a>
       <a href="#faq" class="nav__link">الأسئلة الشائعة</a>
       <a href="#voices" class="nav__link">قالوا عنا</a>
       <a href="#plans" class="btn btn--primary btn--sm nav__cta">ابدأ التعلم</a>
@@ -111,13 +111,13 @@
         <svg class="video__arrow" viewBox="0 0 60 50" aria-hidden="true"><path d="M4 6 C20 10, 40 20, 52 42 M40 38 L52 43 L50 30"/></svg>
       </span>
       <div class="video__frame paper">
-        <!-- ضع رابط الفيديو التعريفي هنا (YouTube embed أو ملف mp4) -->
-        <div class="video__placeholder" id="videoPlaceholder" data-embed="">
-          <button class="video__play" type="button" aria-label="تشغيل الفيديو">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-          </button>
-          <span class="video__label">الفيديو التعريفي</span>
-        </div>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/ZBQqBk6bEqg?rel=0"
+          title="تعرّف على أسلوب Xnote في التعليم"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -226,7 +226,7 @@
 </section>
 
 <!-- ========== 5. Inside Xnote ========== -->
-<section class="section" id="try" aria-labelledby="inside-title">
+<section class="section" aria-labelledby="inside-title">
   <div class="container">
     <div class="section__head reveal">
       <h2 id="inside-title" class="h2">ماذا تجد داخل Xnote؟</h2>
@@ -346,20 +346,28 @@
   <div class="container">
     <div class="section__head reveal">
       <h2 id="voices-title" class="h2">ما الذي تغيّر؟</h2>
-      <p class="sub">كلام متعلمين، عن تغيّر ملحوظ لا عن انطباع عام.</p>
+      <p class="sub">من رسائل المتعلمين، كما وصلتنا.</p>
     </div>
     <ul class="voices">
       <li class="voice paper reveal">
-        <p>“كنت أعرف كلمات منفصلة، وبعد فترة بدأت أكوّن جملًا بسيطة وأستخدمها أثناء الجلسة.”</p>
-        <footer><b>سارة</b> · الرياض</footer>
+        <p>“والله صراحة المنصة جدًا مريحتني.. كنت مشتتة بس كل شي فيها فعلًا شكرًا”</p>
+        <footer><b>غند</b> · السعودية</footer>
       </li>
       <li class="voice paper reveal">
-        <p>“أول مرة أقرأ قصة إنجليزية كاملة وأفهمها بدون قاموس. كانت بالكلمات التي تعلمتها في نفس الأسبوع.”</p>
-        <footer><b>محمد</b> · الدمام</footer>
+        <p>“جميل جدًا وفكرة رهيبة وسهلة التطبيق والصراحة أفضل شي أعجبني ان ممارسة السماع والقراءة في الكلمات والجمل اللي تعلمتها فقط، فتحسسك فعلًا بالإنجاز وانك بديت تتطور.”</p>
+        <footer><b>فهد</b> · السعودية</footer>
       </li>
       <li class="voice paper reveal">
-        <p>“الاستماع صار أسهل لأني أسمع كلمات أعرفها. ما عدت أشعر أن الإنجليزية سريعة.”</p>
-        <footer><b>نورة</b> · الكويت</footer>
+        <p>“والله ان البرنامج جبااار وأفادني كثيييييرًا وأستمتع جدًا بالإستماع له وأتحمس للكلمات الجديدة كل يوم”</p>
+        <footer><b>علي</b> · مبتعث في أستراليا</footer>
+      </li>
+      <li class="voice paper reveal">
+        <p>“خلصت الإستماع أول مرة أفهم عليه”</p>
+        <footer><b>مي</b> · السعودية</footer>
+      </li>
+      <li class="voice paper reveal">
+        <p>“والله المنصة كفو”</p>
+        <footer><b>سلمان</b> · طالب لغة في الفلبين</footer>
       </li>
     </ul>
   </div>
@@ -374,19 +382,27 @@
     <div class="faq reveal">
       <details class="faq__item">
         <summary>هل Xnote مناسبة للمبتدئ تمامًا؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <div class="faq__body"><p>نعم. Xnote مصممة لمن يبدأ من الصفر. تبدأ بكلمات وجمل بسيطة جدًا، والشرح بالعربية عندما تحتاجه.</p></div>
+        <div class="faq__body"><p>نعم. Xnote مصممة لمن يبدأ من الصفر. تبدأ بكلمات وجمل بسيطة جدًا، وتتدرج معك خطوة بخطوة: تتعلم الكلمة، ثم تراها في جملة، ثم في قصة، ثم تسمعها.</p></div>
       </details>
       <details class="faq__item">
-        <summary>هل أبدأ بالمحادثة من أول يوم؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <div class="faq__body"><p>لا. تبدأ أولًا ببناء كلماتك وجملك داخل المنصة. وعندما يكون لديك ما تقوله، تبدأ جلسات الممارسة مع المعلم.</p></div>
+        <summary>مستوى اللغة لدي A2، هل المنصة تناسبني؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <div class="faq__body"><p>Xnote مبنية أساسًا للمبتدئين (A0–A1). إذا كان مستواك A2 فقد تجد بداية المحتوى سهلة، لكن المراجعة والقراءة والاستماع بكلمات تعرفها، ثم استخدامها في جلسات الممارسة، تساعدك على تحويل ما تعرفه إلى كلام.</p></div>
       </details>
       <details class="faq__item">
-        <summary>هل التدريب مع ذكاء اصطناعي؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <div class="faq__body"><p>جلسات الممارسة مع معلم حقيقي، جلسة فردية 1:1. المعلم يعرف ما تعلمته في المنصة ويبني الجلسة عليه.</p></div>
+        <summary>كم كلمة أتعلم يوميًا؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <div class="faq__body"><p>تتعلم كل يوم مجموعة صغيرة من الكلمات والجمل الجديدة، ثم تراجع ما سبق. الهدف ليس العدد، بل أن تفهم كل كلمة وتستخدمها. المنصة تحتوي على أكثر من 1000 كلمة وجملة شائعة تسير فيها بالتسلسل.</p></div>
       </details>
       <details class="faq__item">
-        <summary>ماذا أفعل داخل Xnote؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-        <div class="faq__body"><p>أربعة أشياء: تتعلم كلمات جديدة، تراجع ما تعلمته، تقرأ قصصًا ومقالات بسيطة، وتستمع إلى بودكاست مبني على كلماتك.</p></div>
+        <summary>هل يوجد دروس مسجلة أو مباشرة؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <div class="faq__body"><p>Xnote ليست دروسًا مسجلة. تتعلم بنفسك داخل التطبيق: كلمات جديدة، مراجعة، قراءة، واستماع. وفي الباقة المتكاملة تحصل على جلسات فردية مباشرة مع مدرب، هدفها الممارسة والكلام.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>ما المهام المطلوبة لتحقيق أعلى استفادة من المنصة؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <div class="faq__body"><p>أربع مهام يومية بسيطة: تعلّم الكلمات الجديدة، راجع ما سبق، اقرأ قصة أو مقالًا بمستواك، واستمع إلى البودكاست. وإذا كنت في الباقة المتكاملة، احضر جلساتك واستخدم فيها ما تعلمته.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>هل توجد فترة تجربة مجانية؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <div class="faq__body"><p>أنشئ حسابك من <a href="https://xnote.net/signup">صفحة التسجيل</a>، وستظهر لك خيارات التجربة والاشتراك المتاحة حاليًا.</p></div>
       </details>
       <details class="faq__item">
         <summary>كيف تختلف Xnote عن تطبيقات حفظ الكلمات؟<svg class="icon icon--sm faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
@@ -404,46 +420,44 @@
       <h2 id="plans-title" class="h2">ابدأ التعلم</h2>
       <p class="sub">اختر الطريقة التي تناسبك. تبدأ بالكلمات، وتنتهي بالكلام.</p>
     </div>
-    <!-- الأسعار والمزايا أدناه مؤقتة — تُستبدل بالباقات الفعلية من xnote.net -->
     <ul class="plans">
       <li class="plan paper reveal">
-        <h3 class="plan__name">المنصة</h3>
-        <p class="plan__desc">تعلّم وراجع واقرأ واستمع، بوتيرتك.</p>
-        <p class="plan__price"><span class="plan__amount">99</span><span class="plan__cur">ر.س</span><span class="plan__per">/ شهريًا</span></p>
+        <h3 class="plan__name">التعلم الذاتي الذكي</h3>
+        <p class="plan__desc">تعلّم بمفردك بمنهج مُصمَّم لبناء الحصيلة والمراجعة الذكية.</p>
+        <p class="plan__price">
+          <span class="plan__amount">299</span><span class="plan__cur">ريال</span><span class="plan__per">/ سنة</span>
+        </p>
+        <p class="plan__meta"><s class="plan__old">600 ريال</s><span class="plan__equiv">أي حوالي 25 ريال / شهر</span></p>
         <ul class="plan__list">
-          <li>+1000 كلمة وجملة مرتبة بالتسلسل</li>
-          <li>قصص ومقالات بمستواك</li>
-          <li>بودكاست مبني على كلماتك</li>
-          <li>مراجعة يومية</li>
+          <li><b>بناء الحصيلة</b> — تعلّم الكلمات بالسياق</li>
+          <li><b>الترسيخ الذكي</b> — مراجعة بالذكاء الاصطناعي</li>
+          <li><b>الاستيعاب</b> — فهم الكلمات بعمق</li>
+          <li><b>تطوير الاستماع</b> — تدريب على النطق الحقيقي</li>
+          <li>الوصول لتطبيق Xnote</li>
         </ul>
-        <a href="#" class="btn btn--outline btn--block">ابدأ الآن</a>
+        <a href="https://xnote.net/signup" class="btn btn--outline btn--block">ابدأ التعلم الذاتي</a>
       </li>
       <li class="plan plan--featured paper reveal">
-        <span class="plan__badge">الأكثر اختيارًا</span>
-        <h3 class="plan__name">المنصة + الممارسة</h3>
-        <p class="plan__desc">كل ما في المنصة، مع جلسات فردية لتستخدم ما تعلمته.</p>
-        <p class="plan__price"><span class="plan__amount">299</span><span class="plan__cur">ر.س</span><span class="plan__per">/ شهريًا</span></p>
+        <span class="plan__badge">الموصى به</span>
+        <h3 class="plan__name">الباقة المتكاملة</h3>
+        <p class="plan__desc">التعلم الذاتي + جلسات تدريب وممارسة فردية.</p>
+        <p class="plan__price">
+          <span class="plan__amount">750</span><span class="plan__cur">ريال</span><span class="plan__per">/ شهر</span>
+        </p>
+        <p class="plan__meta"><s class="plan__old">1500 ريال</s></p>
         <ul class="plan__list">
-          <li>كل مزايا المنصة</li>
-          <li>4 جلسات فردية 1:1 شهريًا</li>
-          <li>30 دقيقة مع معلم حقيقي</li>
-          <li>الجلسة مبنية على ما تعلمته</li>
+          <li>كل مميزات التعلم الذاتي</li>
+          <li>12 جلسة فردية مع مدرب</li>
+          <li>3 جلسات في الأسبوع</li>
+          <li>30 دقيقة لكل جلسة</li>
+          <li>متابعة شخصية</li>
+          <li>دعم واتساب مباشر</li>
+          <li>الوصول لتطبيق Xnote</li>
         </ul>
-        <a href="#" class="btn btn--primary btn--block">ابدأ الآن</a>
-      </li>
-      <li class="plan paper reveal">
-        <h3 class="plan__name">سنوي</h3>
-        <p class="plan__desc">للجاد الذي يريد الاستمرار سنة كاملة.</p>
-        <p class="plan__price"><span class="plan__amount">2490</span><span class="plan__cur">ر.س</span><span class="plan__per">/ سنويًا</span></p>
-        <ul class="plan__list">
-          <li>كل مزايا المنصة + الممارسة</li>
-          <li>شهران مجانًا</li>
-          <li>أولوية في حجز الجلسات</li>
-        </ul>
-        <a href="#" class="btn btn--outline btn--block">ابدأ الآن</a>
+        <a href="https://xnote.net/signup" class="btn btn--primary btn--block">ابدأ بالباقة المتكاملة</a>
       </li>
     </ul>
-    <p class="plans__note reveal">تقدر تبدأ بالمنصة وحدها، وتضيف الجلسات متى ما صار عندك ما تقوله.</p>
+    <p class="plans__note reveal">تقدر تبدأ بالتعلم الذاتي، وتنتقل للباقة المتكاملة متى ما صار عندك ما تقوله.</p>
   </div>
 </section>
 
@@ -463,7 +477,7 @@
   <div class="container footer__inner">
     <img src="assets/logo.png" alt="Xnote" class="footer__logo" width="471" height="215">
     <nav aria-label="روابط الصفحة">
-      <a href="#try">جرب المنصة</a>
+      <a href="https://xnote.net/signup">جرب المنصة</a>
       <a href="#faq">الأسئلة الشائعة</a>
       <a href="#voices">قالوا عنا</a>
       <a href="#plans">ابدأ التعلم</a>

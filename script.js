@@ -20,11 +20,13 @@
   // Mobile sticky CTA: show after hero, hide near the final CTA
   const bar = document.getElementById('mobileCta');
   const hero = document.querySelector('.hero');
+  const plans = document.getElementById('plans');
   const finalCta = document.getElementById('start');
-  if (bar && hero && finalCta && 'IntersectionObserver' in window) {
-    let pastHero = false, atFinal = false;
-    const update = () => bar.classList.toggle('is-on', pastHero && !atFinal);
+  if (bar && hero && plans && finalCta && 'IntersectionObserver' in window) {
+    let pastHero = false, atPlans = false, atFinal = false;
+    const update = () => bar.classList.toggle('is-on', pastHero && !atPlans && !atFinal);
     new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting && e.boundingClientRect.bottom < 0; update(); }, { threshold: 0 }).observe(hero);
+    new IntersectionObserver(([e]) => { atPlans = e.isIntersecting; update(); }, { threshold: 0.1 }).observe(plans);
     new IntersectionObserver(([e]) => { atFinal = e.isIntersecting; update(); }, { threshold: 0.2 }).observe(finalCta);
   }
 
@@ -47,20 +49,4 @@
   });
   nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
-})();
-
-// Intro video: set data-embed on #videoPlaceholder to a YouTube embed URL or an .mp4 path
-(function () {
-  const ph = document.getElementById('videoPlaceholder');
-  if (!ph) return;
-  const src = ph.dataset.embed;
-  const play = ph.querySelector('.video__play');
-  play.addEventListener('click', () => {
-    if (!src) return;
-    const isFile = /\.(mp4|webm)(\?|$)/i.test(src);
-    const el = document.createElement(isFile ? 'video' : 'iframe');
-    if (isFile) { el.src = src; el.controls = true; el.autoplay = true; el.playsInline = true; }
-    else { el.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1'; el.allow = 'autoplay; encrypted-media; picture-in-picture'; el.allowFullscreen = true; el.title = 'الفيديو التعريفي لـ Xnote'; }
-    ph.replaceWith(el);
-  });
 })();
