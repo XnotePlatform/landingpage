@@ -54,51 +54,24 @@
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
-      <div class="stack">
-        <div class="sheet sheet--back"></div>
-
-        <div class="sheet sheet--page ruled">
-          <span class="tape tape--l"></span><span class="tape tape--r"></span>
-          <div class="page__margin"></div>
-          <div class="page__body" dir="ltr">
-            <div class="entry">
-              <span class="pencil">Word</span>
-              <span class="entry__word circle-draw">hungry
-                <svg class="circle-draw__svg" viewBox="0 0 120 50" preserveAspectRatio="none"><path d="M14 26 C8 10, 62 2, 98 9 S120 34, 92 44 S16 48, 8 30 S20 10, 44 6"/></svg>
-              </span>
-              <span class="entry__ar" dir="rtl">جائع</span>
-            </div>
-            <svg class="arrow-draw" viewBox="0 0 30 40"><path d="M15 3 C13 14, 17 24, 15 35 M7 28 L15 36 L23 28"/></svg>
-            <div class="entry">
-              <span class="pencil">Sentence</span>
-              <p class="entry__sentence">I'm <mark class="hl">hungry</mark>.</p>
-            </div>
-            <svg class="arrow-draw" viewBox="0 0 30 40"><path d="M15 3 C17 14, 13 24, 15 35 M7 28 L15 36 L23 28"/></svg>
-            <div class="entry">
-              <span class="pencil">Story</span>
-              <p class="entry__story">It's 2 pm. Sami is at work. He is <mark class="hl">hungry</mark>. He opens his bag…</p>
-            </div>
-          </div>
+    <div class="hero__visual">
+      <figure class="photo">
+        <div class="sheet photo__print">
+          <span class="tape tape--l" aria-hidden="true"></span>
+          <picture>
+            <source type="image/webp" srcset="assets/hero-720.webp 720w, assets/hero.webp 1122w" sizes="(min-width: 1000px) 460px, (min-width: 640px) 440px, 88vw">
+            <img class="photo__img" src="assets/hero.jpg" srcset="assets/hero-720.jpg 720w, assets/hero.jpg 1122w" sizes="(min-width: 1000px) 460px, (min-width: 640px) 440px, 88vw" width="1122" height="1402" alt="متعلّم يستمع ويكتب كلمة إنجليزية في دفتره أثناء دراسته على منصة Xnote" fetchpriority="high" decoding="async">
+          </picture>
         </div>
 
-        <div class="sheet sheet--audio" dir="ltr">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12"/></svg>
-          <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-          <span class="pencil">Listening</span>
+        <div class="sheet photo__card" dir="ltr" aria-hidden="true">
+          <span class="pencil">Word</span>
+          <p class="photo__word">hungry <span class="photo__ar" dir="rtl">جائع</span></p>
+          <p class="photo__sentence">I'm <mark class="hl">hungry</mark>.</p>
         </div>
 
-        <div class="sheet sheet--chat" dir="ltr">
-          <span class="tape tape--c"></span>
-          <span class="pencil">Practice</span>
-          <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Are you hungry?</p>
-          <p class="bubble bubble--s"><span class="bubble__who">You</span>Yes, I'm <mark class="hl">hungry</mark>.</p>
-        </div>
-
-        <svg class="stack__link" viewBox="0 0 120 90" aria-hidden="true"><path d="M110 6 C 90 30, 70 40, 40 46 S 12 66, 8 84 M4 72 L8 86 L20 78"/></svg>
-
-        <div class="sticky sticky--hero" dir="ltr"><span class="hand">one word<br>at a time</span></div>
-      </div>
+        <div class="sticky sticky--hero" dir="ltr" aria-hidden="true"><span class="hand">one word<br>at a time</span></div>
+      </figure>
     </div>
   </div>
 </section>
