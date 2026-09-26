@@ -48,6 +48,37 @@
     document.addEventListener('click', (e) => { if (!nav.contains(e.target) && !btn.contains(e.target)) close(); });
   }
 
+  // Intro video: swap the poster for the YouTube player on press.
+  // If the page's security policy blocks the embed, fall back to opening YouTube.
+  const video = document.getElementById('introVideo');
+  if (video) {
+    let embedBlocked = false;
+    let player = null;
+    const showPoster = () => { if (player) { player.remove(); player = null; } video.hidden = false; };
+    document.addEventListener('securitypolicyviolation', (e) => {
+      if (/frame|child/.test(e.effectiveDirective || e.violatedDirective || '') && /youtube/.test(e.blockedURI || '')) {
+        const wasPlaying = !!player;
+        embedBlocked = true;
+        showPoster();
+        // still within the click's user activation, so the new tab is allowed
+        if (wasPlaying) window.open(video.href, '_blank', 'noopener');
+      }
+    });
+    video.addEventListener('click', (e) => {
+      if (embedBlocked) return; // let the link open YouTube in a new tab
+      e.preventDefault();
+      player = document.createElement('iframe');
+      player.src = `https://www.youtube-nocookie.com/embed/${video.dataset.video}?rel=0&autoplay=1&playsinline=1`;
+      player.title = 'تعرّف على أسلوب Xnote في التعليم';
+      player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      player.referrerPolicy = 'strict-origin-when-cross-origin';
+      player.allowFullscreen = true;
+      video.hidden = true;
+      video.parentNode.appendChild(player);
+      player.focus();
+    });
+  }
+
   // FAQ accordion: one open at a time, animated height, keyboard accessible
   const questions = document.querySelectorAll('.faq__q');
   questions.forEach((q) => {
