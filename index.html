@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xnote — ابنِ إنجليزيتك خطوة بخطوة</title>
+  <meta name="description" content="Xnote: منصة لتعلم الإنجليزية للمبتدئين الناطقين بالعربية. تعلّم الكلمات والجمل، افهمها في قصص بسيطة، استمع إليها، ثم مارسها مع معلم حقيقي.">
+  <meta name="theme-color" content="#FFFDF8">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<!-- ================= Header ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo" aria-label="Xnote — الصفحة الرئيسية">
+      <img src="assets/logo.png" alt="Xnote" width="471" height="215" class="logo__img">
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="https://xnote.net/signup" class="nav__link">جرب المنصة</a>
+      <a href="#faq" class="nav__link">الأسئلة الشائعة</a>
+      <a href="#voices" class="nav__link">قالوا عنا</a>
+      <a href="#plans" class="btn btn--primary btn--sm nav__cta">ابدأ التعلم</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="القائمة">
+      <span class="menu-btn__bar"></span><span class="menu-btn__bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= Hero ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <h1 id="hero-title" class="h1 reveal">
+        من الكلمات إلى <span class="u-draw">المحادثة
+          <svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg>
+        </span>
+      </h1>
+      <p class="lead reveal">في Xnote تتعلم الكلمة، تراها في جملة، تعيشها في قصة، وتسمعها في بودكاست صُمم لك، وبعدها تتحدث مع معلم حقيقي.</p>
+      <p class="hero__promise reveal">ابدأ من الصفر، وتقدّم حتى تتكلم بثقة.</p>
+      <div class="hero__cta reveal">
+        <a href="https://xnote.net/signup" class="btn btn--primary btn--lg">ابدأ أول خطوة مجاناً</a>
+        <div class="apps">
+          <span class="apps__label">حمّل التطبيق</span>
+          <div class="apps__row">
+            <a class="app-badge" href="https://apps.apple.com/sa/app/xnote/id6757708845" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من App Store">
+              <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="app-badge__text"><small>تنزيل من</small><b dir="ltr">App Store</b></span>
+            </a>
+            <a class="app-badge" href="https://play.google.com/store/apps/details?id=com.montajraqami.xnote" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من Google Play">
+              <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+              <span class="app-badge__text"><small>احصل عليه من</small><b dir="ltr">Google Play</b></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <figure class="photo">
+        <div class="sheet photo__print">
+          <span class="tape tape--l" aria-hidden="true"></span>
+          <picture>
+            <source type="image/webp" srcset="assets/hero-720.webp 720w, assets/hero.webp 1122w" sizes="(min-width: 1000px) 460px, (min-width: 640px) 440px, 88vw">
+            <img class="photo__img" src="assets/hero.jpg" srcset="assets/hero-720.jpg 720w, assets/hero.jpg 1122w" sizes="(min-width: 1000px) 460px, (min-width: 640px) 440px, 88vw" width="1122" height="1402" alt="متعلّم يستمع ويكتب كلمة إنجليزية في دفتره أثناء دراسته على منصة Xnote" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+
+        <div class="sheet photo__card" dir="ltr" aria-hidden="true">
+          <span class="pencil">Word</span>
+          <p class="photo__word">hungry <span class="photo__ar" dir="rtl">جائع</span></p>
+          <p class="photo__sentence">I'm <mark class="hl">hungry</mark>.</p>
+        </div>
+
+        <div class="sticky sticky--hero" dir="ltr" aria-hidden="true"><span class="hand">one word<br>at a time</span></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Video ================= -->
+<section class="section section--video" id="video" aria-labelledby="video-title">
+  <div class="container">
+    <div class="section__head section__head--center reveal">
+      <h2 id="video-title" class="h2">تعرّف على أسلوب Xnote في التعليم</h2>
+      <p class="sub">دقيقتان تشرحان لك كيف تسير الكلمة من الدفتر إلى لسانك.</p>
+    </div>
+    <div class="frame reveal">
+      <span class="tape tape--l"></span><span class="tape tape--r"></span>
+      <div class="frame__inner">
+        <a class="video ruled-dark" id="introVideo" data-video="ZBQqBk6bEqg" href="https://www.youtube.com/watch?v=ZBQqBk6bEqg" target="_blank" rel="noopener" aria-label="تشغيل الفيديو: تعرّف على أسلوب Xnote في التعليم">
+          <img class="video__logo" src="assets/logo.png" alt="" width="471" height="215" loading="lazy">
+          <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="video__caption">شاهد كيف تتعلم مع Xnote</span>
+        </a>
+      </div>
+      <span class="hand frame__note" dir="ltr">watch this
+        <svg class="frame__arrow" viewBox="0 0 60 50"><path d="M56 6 C40 10, 22 20, 10 42 M22 38 L10 44 L12 30"/></svg>
+      </span>
+    </div>
+    <p class="frame__alt reveal"><a href="https://www.youtube.com/watch?v=ZBQqBk6bEqg" target="_blank" rel="noopener">أو شاهد الفيديو على YouTube</a></p>
+  </div>
+</section>
+
+<!-- ================= Problem ================= -->
+<section class="section section--cream problem ruled-soft" aria-labelledby="problem-title">
+  <div class="container problem__grid">
+    <div class="problem__copy">
+      <span class="hand problem__note">ملاحظة</span>
+      <h2 id="problem-title" class="h2 h2--xl reveal">تعرف كلمات…<br>لكن وقت الكلام تتوقف؟</h2>
+      <p class="reveal">المشكلة غالبًا ليست نقص الكلمات. المشكلة أنك تعلمت كلمات منفصلة، ولم ترها داخل سياق، ولم تسمعها، ولم تستخدمها.</p>
+      <p class="reveal">الكلمة التي لا تراها في جملة، ولا تسمعها في موقف، تبقى في الذاكرة… ولا تخرج على اللسان.</p>
+    </div>
+    <blockquote class="statement reveal">
+      <span class="statement__text"><mark class="hl hl--wide">مدخلاتك اللغوية</mark> تحدد مخرجاتك.</span>
+      <svg class="statement__arrow" viewBox="0 0 80 60" aria-hidden="true"><path d="M74 8 C58 14, 40 22, 24 40 S10 52, 6 54 M18 50 L6 55 L8 43"/></svg>
+      <span class="hand statement__hand">تذكّر هذه</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= Method ================= -->
+<section class="section method" id="method" aria-labelledby="method-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <h2 id="method-title" class="h2">تعلّم. افهم. استمع. مارس.</h2>
+      <p class="sub">أربع خطوات بسيطة، بالترتيب. لا قفز ولا عشوائية.</p>
+    </div>
+    <ol class="path">
+      <svg class="path__line" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C120 20, 220 100, 360 62 S560 20, 700 62 S900 100, 1000 60"/></svg>
+      <li class="path__step reveal">
+        <span class="path__num"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 C50 4, 60 18, 58 33 S46 60, 30 58 S4 46, 6 30 S16 8, 36 6"/></svg>01</span>
+        <h3 class="h3">تعلّم</h3>
+        <p>كلمات وجمل شائعة تناسب مستوى المبتدئ.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M30 6 C48 3, 60 16, 58 32 S48 60, 30 58 S4 48, 6 30 S14 8, 34 6"/></svg>02</span>
+        <h3 class="h3">افهم</h3>
+        <p>ترى ما تعلمته داخل قصص ومقالات بسيطة.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M33 6 C50 5, 59 19, 58 34 S45 60, 29 58 S5 45, 6 29 S17 8, 37 7"/></svg>03</span>
+        <h3 class="h3">استمع</h3>
+        <p>محتوى صوتي يعتمد على اللغة التي تعلمتها.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M31 5 C49 4, 60 17, 58 33 S47 59, 30 58 S4 47, 6 31 S15 7, 35 5"/></svg>04</span>
+        <h3 class="h3">مارس</h3>
+        <p>تستخدم ما تعلمته مع معلم حقيقي.</p>
+      </li>
+    </ol>
+    <dl class="stats reveal">
+      <div class="stat"><dt>كلمة وجملة شائعة</dt><dd>+1000</dd></div>
+      <div class="stat"><dt>خطوات، بالترتيب</dt><dd>4</dd></div>
+      <div class="stat"><dt>جلسة مع معلم حقيقي</dt><dd>1:1</dd></div>
+      <div class="stat"><dt>دقيقة ممارسة</dt><dd>30</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= Word → Language ================= -->
+<section class="section section--cream journey-section" aria-labelledby="flow-title">
+  <div class="container">
+    <div class="section__head section__head--center reveal">
+      <h2 id="flow-title" class="h2">من كلمة… إلى لغة تستخدمها</h2>
+      <p class="sub">هكذا تسير كلمة واحدة داخل Xnote.</p>
+    </div>
+
+    <div class="journey" dir="ltr">
+      <div class="journey__spine" aria-hidden="true"></div>
+
+      <div class="jstep jstep--word reveal">
+        <span class="pencil">Word</span>
+        <p class="jstep__big"><mark class="hl">hungry</mark></p>
+        <span class="jstep__ar" dir="rtl">جائع</span>
+      </div>
+
+      <div class="jstep jstep--sentence reveal">
+        <span class="pencil">Sentence</span>
+        <p class="jstep__big">I'm <mark class="hl">hungry</mark>.</p>
+      </div>
+
+      <article class="sheet jstep jstep--story ruled reveal">
+        <span class="tape tape--l"></span>
+        <span class="pencil">Story</span>
+        <p class="jstep__story">It's 2 pm. Sami is at work. He is <mark class="hl">hungry</mark>. He opens his bag. There is no food. “I'm <mark class="hl">hungry</mark>,” he says.</p>
+      </article>
+
+      <div class="sheet jstep jstep--audio reveal">
+        <span class="pencil">Listening</span>
+        <div class="player">
+          <span class="player__btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="wave wave--lg"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="player__time">0:42</span>
+        </div>
+      </div>
+
+      <article class="sheet jstep jstep--chat reveal">
+        <span class="tape tape--r"></span>
+        <span class="pencil">Practice</span>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Are you hungry?</p>
+        <p class="bubble bubble--s"><span class="bubble__who">Student</span>Yes, I'm <mark class="hl">hungry</mark>.</p>
+      </article>
+    </div>
+
+    <p class="journey__caption reveal">كلمة واحدة… رأيتها، فهمتها، سمعتها، ثم قلتها.</p>
+  </div>
+</section>
+
+<!-- ================= Inside Xnote ================= -->
+<section class="section inside-section" aria-labelledby="inside-title">
+  <div class="container inside">
+    <div class="inside__copy">
+      <div class="section__head reveal">
+        <h2 id="inside-title" class="h2">ماذا تجد داخل Xnote؟</h2>
+        <p class="sub">أكثر من <strong class="num">1000</strong> كلمة وجملة شائعة الاستخدام، مرتبة لك خطوة بخطوة.</p>
+      </div>
+      <ul class="benefits">
+        <li class="benefit reveal">
+          <h3 class="h3">تعلّم كلمات جديدة</h3>
+          <p>ابنِ حصيلتك اللغوية تدريجيًا.</p>
+        </li>
+        <li class="benefit reveal">
+          <h3 class="h3">راجع ما تعلمته</h3>
+          <p>ارجع للكلمات والجمل حتى تثبت.</p>
+          <span class="hand benefit__note">كل يوم، قليلًا</span>
+        </li>
+        <li class="benefit reveal">
+          <h3 class="h3">اقرأ</h3>
+          <p>قصص ومقالات تعتمد على الكلمات التي تعلمتها.</p>
+        </li>
+        <li class="benefit reveal">
+          <h3 class="h3">استمع</h3>
+          <p>انتقل من رؤية اللغة إلى سماعها وفهمها.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="inside__visual reveal" aria-hidden="true">
+      <div class="phone">
+        <div class="phone__screen">
+          <div class="phone__top">
+            <img src="assets/logo.png" alt="" class="phone__logo" width="471" height="215">
+            <span class="phone__pill">اليوم</span>
+          </div>
+          <div class="phone__card">
+            <span class="phone__label">كلمة جديدة</span>
+            <span class="phone__word" dir="ltr">hungry</span>
+            <span class="phone__ar">جائع</span>
+          </div>
+          <div class="phone__card phone__card--soft">
+            <span class="phone__label">الجملة</span>
+            <span class="phone__sent" dir="ltr">I'm <mark class="hl">hungry</mark>.</span>
+          </div>
+          <div class="phone__row">
+            <span class="phone__chip phone__chip--on">تعلّم</span>
+            <span class="phone__chip">راجع</span>
+            <span class="phone__chip">اقرأ</span>
+            <span class="phone__chip">استمع</span>
+          </div>
+          <div class="phone__progress"><i></i></div>
+          <span class="phone__label">120 من 1000 كلمة</span>
+        </div>
+      </div>
+      <div class="sheet sheet--mini sheet--mini-story ruled" dir="ltr">
+        <span class="pencil">Today's story</span>
+        <p>Sami is <mark class="hl">hungry</mark>. He goes to the kitchen…</p>
+      </div>
+      <div class="sheet sheet--mini sheet--mini-pod" dir="ltr">
+        <span class="player__btn player__btn--sm"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="pencil">your podcast</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Practice ================= -->
+<section class="section section--cream practice-section" aria-labelledby="practice-title">
+  <div class="container practice">
+    <div class="practice__copy">
+      <h2 id="practice-title" class="h2 reveal">تعلّم داخل Xnote… ثم استخدم ما تعلمته.</h2>
+      <p class="reveal">جلسة المعلم ليست درس إنجليزي تقليديًا. لا قواعد، ولا شرح طويل. هي مساحة لتقول ما تعلمته بصوتك.</p>
+      <p class="relation reveal">
+        <span class="relation__line"><b>Xnote</b> تبني معرفتك باللغة.</span>
+        <span class="relation__line"><b>والمعلم</b> يساعدك على <span class="u-draw">استخدامها<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span>.</span>
+      </p>
+      <dl class="facts reveal">
+        <div class="fact"><dd>1:1</dd><dt>جلسة فردية</dt></div>
+        <div class="fact"><dd>30</dd><dt>دقيقة لكل جلسة</dt></div>
+        <div class="fact"><dd>معلم حقيقي</dd><dt>لا ذكاء اصطناعي</dt></div>
+        <div class="fact"><dd>على ما تعلمته</dd><dt>مرتبطة بالمنصة</dt></div>
+      </dl>
+    </div>
+
+    <div class="session reveal" aria-hidden="true">
+      <div class="session__bar">
+        <span class="session__live"><i></i>جلسة ممارسة</span>
+        <span class="session__time" dir="ltr">29:41</span>
+      </div>
+      <div class="session__people">
+        <span class="avatar avatar--t">م</span>
+        <span class="session__vs">1:1</span>
+        <span class="avatar avatar--s">أ</span>
+      </div>
+      <div class="session__chat" dir="ltr">
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Are you hungry?</p>
+        <p class="bubble bubble--s"><span class="bubble__who">You</span>Yes, I'm <mark class="hl">hungry</mark>. I want lunch.</p>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>What do you want to eat?</p>
+      </div>
+      <div class="session__words">
+        <span class="session__wlabel">كلماتك في هذه الجلسة</span>
+        <span class="chips" dir="ltr"><span class="chip">hungry</span><span class="chip">lunch</span><span class="chip">eat</span><span class="chip">kitchen</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Who ================= -->
+<section class="section who" aria-labelledby="who-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <h2 id="who-title" class="h2">للمبتدئ الذي لا يعرف من أين يبدأ.</h2>
+    </div>
+    <ul class="notes">
+      <li class="note reveal"><span class="tape tape--c"></span><p>“أعرف كلمات <mark class="hl">لكن لا أستطيع استخدامها</mark>.”</p></li>
+      <li class="note reveal"><span class="tape tape--c"></span><p>“أبدأ ثم <mark class="hl">لا أعرف ماذا أتعلم بعد ذلك</mark>.”</p></li>
+      <li class="note reveal"><span class="tape tape--c"></span><p>“المحتوى الإنجليزي غالبًا <mark class="hl">أعلى من مستواي</mark>.”</p></li>
+    </ul>
+    <p class="who__close reveal">Xnote ترتب لك الخطوات بدل أن تتركك أمام محتوى عشوائي.</p>
+  </div>
+</section>
+
+<!-- ================= Philosophy ================= -->
+<section class="section section--quiet philosophy-section" aria-label="فلسفة Xnote">
+  <div class="container">
+    <blockquote class="philosophy sheet ruled reveal">
+      <span class="tape tape--c"></span>
+      <p>تعلّم ما يكفي لتفهم.</p>
+      <p>افهم ما تعلمت.</p>
+      <p>ثم <span class="u-draw">استخدمه<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span>.</p>
+      <footer class="hand" dir="ltr">— Xnote</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= Voices ================= -->
+<section class="section section--cream" id="voices" aria-labelledby="voices-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <h2 id="voices-title" class="h2">ما الذي تغيّر؟</h2>
+      <p class="sub">من رسائل المتعلمين، كما وصلتنا.</p>
+    </div>
+    <ul class="quotes">
+      <li class="quote sheet reveal">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <p>والله صراحة المنصة جدًا مريحتني.. كنت مشتتة بس كل شي فيها فعلًا شكرًا</p>
+        <footer><b>غند</b><span class="loc">السعودية</span></footer>
+      </li>
+      <li class="quote sheet reveal">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <p>جميل جدًا وفكرة رهيبة وسهلة التطبيق والصراحة أفضل شي أعجبني ان ممارسة السماع والقراءة في الكلمات والجمل اللي تعلمتها فقط، فتحسسك فعلًا بالإنجاز وانك بديت تتطور.</p>
+        <footer><b>فهد</b><span class="loc">السعودية</span></footer>
+      </li>
+      <li class="quote sheet reveal">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <p>والله ان البرنامج جبااار وأفادني كثيييييرًا وأستمتع جدًا بالإستماع له وأتحمس للكلمات الجديدة كل يوم</p>
+        <footer><b>علي</b><span class="loc">مبتعث في أستراليا</span></footer>
+      </li>
+      <li class="quote sheet reveal">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <p>خلصت الإستماع أول مرة أفهم عليه</p>
+        <footer><b>مي</b><span class="loc">السعودية</span></footer>
+      </li>
+      <li class="quote sheet reveal">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <p>والله المنصة كفو</p>
+        <footer><b>سلمان</b><span class="loc">طالب لغة في الفلبين</span></footer>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <h2 id="faq-title" class="h2">أسئلة شائعة</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">هل Xnote مناسبة للمبتدئ تمامًا؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div class="faq__body"><p>نعم. Xnote مصممة لمن يبدأ من الصفر. تبدأ بكلمات وجمل بسيطة جدًا، وتتدرج معك خطوة بخطوة: تتعلم الكلمة، ثم تراها في جملة، ثم في قصة، ثم تسمعها.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">مستوى اللغة لدي A2، هل المنصة تناسبني؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn"><div class="faq__body"><p>Xnote مبنية أساسًا للمبتدئين (A0–A1). إذا كان مستواك A2 فقد تجد بداية المحتوى سهلة، لكن المراجعة والقراءة والاستماع بكلمات تعرفها، ثم استخدامها في جلسات الممارسة، تساعدك على تحويل ما تعرفه إلى كلام.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">كم كلمة أتعلم يوميًا؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn"><div class="faq__body"><p>تتعلم كل يوم مجموعة صغيرة من الكلمات والجمل الجديدة، ثم تراجع ما سبق. الهدف ليس العدد، بل أن تفهم كل كلمة وتستخدمها. المنصة تحتوي على أكثر من 1000 كلمة وجملة شائعة تسير فيها بالتسلسل.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">هل يوجد دروس مسجلة أو مباشرة؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn"><div class="faq__body"><p>Xnote ليست دروسًا مسجلة. تتعلم بنفسك داخل التطبيق: كلمات جديدة، مراجعة، قراءة، واستماع. وفي الباقة المتكاملة تحصل على جلسات فردية مباشرة مع مدرب، هدفها الممارسة والكلام.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">ما المهام المطلوبة لتحقيق أعلى استفادة من المنصة؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><div class="faq__body"><p>أربع مهام يومية بسيطة: تعلّم الكلمات الجديدة، راجع ما سبق، اقرأ قصة أو مقالًا بمستواك، واستمع إلى البودكاست. وإذا كنت في الباقة المتكاملة، احضر جلساتك واستخدم فيها ما تعلمته.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">هل توجد فترة تجربة مجانية؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-6" role="region" aria-labelledby="faq-6-btn"><div class="faq__body"><p>أنشئ حسابك من <a href="https://xnote.net/signup">صفحة التسجيل</a>، وستظهر لك خيارات التجربة والاشتراك المتاحة حاليًا.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn">كيف تختلف Xnote عن تطبيقات حفظ الكلمات؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-7" role="region" aria-labelledby="faq-7-btn"><div class="faq__body"><p>تطبيقات الحفظ تعطيك كلمة وتتوقف. Xnote تأخذ الكلمة إلى جملة، ثم قصة، ثم صوت، ثم جلسة تستخدمها فيها. الكلمة لا تبقى وحدها.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Plans ================= -->
+<section class="section section--cream plans-section" id="plans" aria-labelledby="plans-title">
+  <div class="container">
+    <div class="section__head section__head--center reveal">
+      <h2 id="plans-title" class="h2">ابدأ التعلم</h2>
+      <p class="sub">اختر الطريقة التي تناسبك. تبدأ بالكلمات، وتنتهي بالكلام.</p>
+    </div>
+    <ul class="plans">
+      <li class="plan sheet reveal">
+        <h3 class="plan__name">التعلم الذاتي الذكي</h3>
+        <p class="plan__desc">تعلّم بمفردك بمنهج مُصمَّم لبناء الحصيلة والمراجعة الذكية.</p>
+        <p class="plan__price">
+          <span class="plan__amount">299</span>
+          <span class="plan__unit"><span class="plan__cur">ريال</span><span class="plan__per">/ سنة</span></span>
+        </p>
+        <p class="plan__meta"><s class="plan__old">600 ريال</s><span class="plan__equiv">أي حوالي 25 ريال / شهر</span></p>
+        <ul class="plan__list ruled-list">
+          <li><b>بناء الحصيلة</b> — تعلّم الكلمات بالسياق</li>
+          <li><b>الترسيخ الذكي</b> — مراجعة بالذكاء الاصطناعي</li>
+          <li><b>الاستيعاب</b> — فهم الكلمات بعمق</li>
+          <li><b>تطوير الاستماع</b> — تدريب على النطق الحقيقي</li>
+          <li>الوصول لتطبيق Xnote</li>
+        </ul>
+        <a href="https://xnote.net/signup" class="btn btn--outline btn--block">ابدأ التعلم الذاتي</a>
+      </li>
+      <li class="plan plan--featured sheet reveal">
+        <span class="plan__badge tape tape--label">الموصى به</span>
+        <h3 class="plan__name">الباقة المتكاملة</h3>
+        <p class="plan__desc">التعلم الذاتي + جلسات تدريب وممارسة فردية.</p>
+        <p class="plan__price">
+          <span class="plan__amount">750</span>
+          <span class="plan__unit"><span class="plan__cur">ريال</span><span class="plan__per">/ شهر</span></span>
+        </p>
+        <p class="plan__meta"><s class="plan__old">1500 ريال</s></p>
+        <ul class="plan__list ruled-list">
+          <li>كل مميزات التعلم الذاتي</li>
+          <li>12 جلسة فردية مع مدرب</li>
+          <li>3 جلسات في الأسبوع</li>
+          <li>30 دقيقة لكل جلسة</li>
+          <li>متابعة شخصية</li>
+          <li>دعم واتساب مباشر</li>
+          <li>الوصول لتطبيق Xnote</li>
+        </ul>
+        <a href="https://xnote.net/signup" class="btn btn--primary btn--block">ابدأ بالباقة المتكاملة</a>
+      </li>
+    </ul>
+    <p class="plans__note reveal">تقدر تبدأ بالتعلم الذاتي، وتنتقل للباقة المتكاملة متى ما صار عندك ما تقوله.</p>
+  </div>
+</section>
+
+<!-- ================= Final CTA ================= -->
+<section class="final ruled-dark" id="start" aria-labelledby="final-title">
+  <div class="container">
+    <div class="final__sheet sheet ruled reveal">
+      <span class="tape tape--l"></span><span class="tape tape--r"></span>
+      <h2 id="final-title" class="h2 h2--xl">ابدأ ببناء لغتك <span class="u-draw">خطوة بخطوة<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span>.</h2>
+      <p class="final__text">لا تحتاج أن تعرف كل شيء قبل أن تبدأ.<br>تحتاج فقط أن تعرف ما الخطوة التالية.</p>
+      <a href="https://xnote.net/signup" class="btn btn--primary btn--lg">جرب المنصة</a>
+      <div class="apps apps--center">
+            <span class="apps__label">حمّل التطبيق</span>
+            <div class="apps__row">
+              <a class="app-badge" href="https://apps.apple.com/sa/app/xnote/id6757708845" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من App Store">
+                <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <span class="app-badge__text"><small>تنزيل من</small><b dir="ltr">App Store</b></span>
+              </a>
+              <a class="app-badge" href="https://play.google.com/store/apps/details?id=com.montajraqami.xnote" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من Google Play">
+                <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+                <span class="app-badge__text"><small>احصل عليه من</small><b dir="ltr">Google Play</b></span>
+              </a>
+            </div>
+          </div>
+    </div>
+    <p class="hand final__hand" dir="ltr">Small steps every day.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <img src="assets/logo.png" alt="Xnote" class="footer__logo" width="471" height="215">
+    <nav aria-label="روابط الصفحة" class="footer__nav">
+      <a href="https://xnote.net/signup">جرب المنصة</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#voices">قالوا عنا</a>
+      <a href="#plans">ابدأ التعلم</a>
+    </nav>
+    <span class="footer__copy">© 2026 Xnote</span>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mobileCta">
+  <a href="#plans" class="btn btn--primary btn--block">ابدأ مع Xnote</a>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
