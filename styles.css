@@ -231,10 +231,10 @@ button { font: inherit; color: inherit; }
 /* learning steps: a small path, word → teacher */
 .steps { margin-top: 24px; display: grid; gap: 10px; max-width: 36ch; }
 .steps li { position: relative; padding-inline-start: 30px; font-size: clamp(1.08rem, 1.5vw, 1.2rem); font-weight: 500; line-height: 1.5; color: var(--ink-2); }
-.steps li::before { content: ""; position: absolute; z-index: 1; inset-inline-start: 3px; top: .5em; width: 12px; height: 12px; border-radius: 50%; background: var(--page); border: 2.5px solid var(--marker); }
-.steps li:not(:last-child)::after { content: ""; position: absolute; inset-inline-start: 8px; top: calc(.5em + 12px); height: calc(100% - 2px); border-inline-start: 2px dashed rgba(245, 197, 78, .85); }
+.steps li::before { content: ""; position: absolute; z-index: 1; inset-inline-start: 0; top: calc(.75em - 10px); width: 20px; height: 20px; border-radius: 50%; background: rgba(245, 197, 78, .32) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2330312F' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center / 12px no-repeat; }
+.steps li:not(:last-child)::after { content: ""; position: absolute; inset-inline-start: 9px; top: calc(.75em + 11px); height: calc(100% - 12px); border-inline-start: 2px dashed rgba(245, 197, 78, .7); }
 .steps .steps__goal { font-weight: 700; color: var(--ink); }
-.steps .steps__goal::before { inset-inline-start: 2px; top: calc(.5em - 1px); width: 14px; height: 14px; border: 0; background: var(--marker); box-shadow: 0 0 0 4px rgba(245, 197, 78, .28); }
+.steps .steps__goal::before { background-color: var(--marker); }
 .hero__promise { display: flex; align-items: center; gap: 12px; margin-top: 18px; font-weight: 700; font-size: clamp(1.1rem, 1.5vw, 1.22rem); color: var(--ink); }
 .hero__promise::before { content: ""; flex: none; width: 26px; height: 4px; border-radius: 2px; background: var(--marker); }
 .hero__cta { margin-top: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
@@ -486,7 +486,6 @@ button { font: inherit; color: inherit; }
 .quote:nth-child(odd) { --rot: -.5deg; }
 .quote:nth-child(even) { --rot: .5deg; }
 .quotes__hint { display: none; align-items: center; gap: 8px; margin-top: 4px; color: var(--pencil); font-weight: 600; font-size: .92rem; }
-.quotes__hint svg { width: 26px; height: 14px; fill: none; stroke: var(--marker); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 /* phones and tablets: a swipeable row of notes instead of a long stack */
 @media (max-width: 899px) {
   .quotes { grid-auto-flow: column; grid-auto-columns: min(84%, 360px); gap: 16px; align-items: stretch; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); margin-inline: calc(var(--gutter) * -1); padding: 16px var(--gutter) 24px; scrollbar-width: none; }
