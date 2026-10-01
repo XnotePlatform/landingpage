@@ -592,6 +592,87 @@ button { font: inherit; color: inherit; }
 @media (min-width: 900px) { .mobile-cta { display: none; } }
 
 /* ========================================================
+   Hero headline: one line from tablets up, two even lines on phones
+   ======================================================== */
+.h1--hero { white-space: nowrap; }
+.h1--hero .h1__line { display: inline; }
+@media (min-width: 1000px) { .h1--hero { font-size: clamp(2.4rem, 3.5vw, 3.3rem); } }
+@media (max-width: 639px) {
+  .h1--hero { white-space: normal; }
+  .h1--hero .h1__line { display: block; }
+}
+
+/* ========================================================
+   Is Xnote for you?
+   ======================================================== */
+.fit { display: grid; gap: 28px; max-width: 920px; margin: 0 auto; }
+.fit__card { padding: 34px 28px 28px; }
+.fit__card--yes { --rot: -.6deg; }
+.fit__card--no { --rot: .5deg; position: relative; border: 1.5px dashed var(--rule-strong); border-radius: 6px; background: rgba(255, 255, 255, .45); }
+.fit__title { font-weight: 700; font-size: 1.32rem; line-height: 1.4; margin-bottom: 14px; }
+.fit__list li { position: relative; padding: 10px 0; padding-inline-start: 32px; border-bottom: 1px solid var(--rule-strong); font-weight: 500; line-height: 1.6; }
+.fit__list li:last-child { border-bottom: 0; }
+.fit__list li::before { content: ""; position: absolute; inset-inline-start: 0; top: 14px; width: 20px; height: 20px; border-radius: 50%; background: var(--marker) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2330312F' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center / 12px no-repeat; }
+.fit__card--no .fit__title { color: var(--ink-2); }
+.fit__card--no .fit__list li { color: var(--ink-2); }
+.fit__card--no .fit__list li::before { background: rgba(48, 49, 47, .08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234B4C49' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center / 11px no-repeat; }
+.fit__close { text-align: center; margin: clamp(40px, 5vw, 56px) auto 0; max-width: 46ch; text-wrap: balance; font-weight: 700; font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.6; }
+.fit__cta { display: flex; justify-content: center; margin-top: 26px; }
+@media (min-width: 860px) { .fit { grid-template-columns: 1.15fr .85fr; align-items: start; gap: 34px; } .fit__card--no { margin-top: 22px; } }
+@media (max-width: 639px) { .fit__card { padding: 30px 20px 22px; } .fit__cta .btn { width: 100%; } }
+
+/* ========================================================
+   7-day guarantee
+   ======================================================== */
+.guarantee {
+  max-width: 860px; margin: 0 auto; --rot: -.5deg;
+  padding: clamp(32px, 5vw, 52px) clamp(22px, 5vw, 52px);
+  display: grid; grid-template-columns: auto 1fr; column-gap: clamp(22px, 4vw, 44px); row-gap: 14px;
+  grid-template-areas: "badge title" "badge text"; align-items: start;
+}
+.guarantee__badge {
+  grid-area: badge; align-self: center;
+  width: clamp(112px, 15vw, 156px); aspect-ratio: 1; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--marker); color: var(--ink); text-align: center;
+  outline: 2px dashed rgba(48, 49, 47, .35); outline-offset: 7px;
+  box-shadow: var(--sh-btn); transform: rotate(-6deg);
+}
+.guarantee__num { font-weight: 800; font-size: clamp(2.7rem, 5vw, 3.8rem); line-height: .9; font-variant-numeric: tabular-nums; }
+.guarantee__label { font-weight: 700; font-size: clamp(.95rem, 1.6vw, 1.1rem); line-height: 1.3; margin-top: 4px; }
+.guarantee__title { grid-area: title; align-self: end; }
+.guarantee__text { grid-area: text; display: grid; gap: 10px; }
+.guarantee__text p { color: var(--ink-2); font-weight: 500; font-size: 1.08rem; line-height: 1.8; }
+.guarantee__text .guarantee__fine { font-size: .95rem; color: var(--pencil); padding-top: 12px; border-top: 1px dashed var(--rule-strong); }
+.guarantee__fine b { color: var(--ink-2); }
+.guarantee__text b { color: var(--ink); }
+.nowrap { white-space: nowrap; }
+@media (max-width: 639px) {
+  .guarantee { grid-template-areas: "badge title" "text text"; row-gap: 22px; }
+  .guarantee__badge { width: 100px; outline-offset: 5px; }
+  .guarantee__num { font-size: 2.4rem; }
+  .guarantee__label { font-size: .85rem; }
+  .guarantee__title { align-self: center; }
+}
+
+/* ========================================================
+   Floating WhatsApp button
+   ======================================================== */
+.wa-float {
+  position: fixed; z-index: 70; inset-inline-end: 20px; bottom: calc(20px + env(safe-area-inset-bottom));
+  width: 58px; height: 58px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #25D366; color: #fff;
+  box-shadow: 0 2px 4px rgba(48, 49, 47, .18), 0 14px 28px -12px rgba(18, 140, 70, .75);
+  transition: transform var(--t-fast) var(--ease), bottom var(--t-med) var(--ease);
+}
+.wa-float svg { width: 30px; height: 30px; fill: currentColor; }
+.wa-float:hover { transform: translateY(-2px) scale(1.04); }
+/* stay above the sticky bottom CTA on phones */
+.mobile-cta.is-on ~ .wa-float { bottom: calc(86px + env(safe-area-inset-bottom)); }
+@media (min-width: 900px) { .wa-float { inset-inline-end: 28px; bottom: 28px; width: 62px; height: 62px; } }
+
+/* ========================================================
    Motion
    ======================================================== */
 .reveal { opacity: 0; transform: translateY(18px) rotate(var(--rot, 0deg)); transition: opacity 640ms var(--ease), transform 640ms var(--ease); }
@@ -611,5 +692,6 @@ button { font: inherit; color: inherit; }
   .hero__visual { transform: none; }
   .u-draw__svg path, .circle-draw__svg path, .path__num svg { stroke-dashoffset: 0; animation: none !important; }
   .wave i, .photo__card, .sticky--hero, .session__live i { animation: none; }
+  .wa-float { transition: none; }
   .btn, .app-badge, .video__play, .faq__icon, .faq__panel, .faq__body, .mobile-cta, .nav, .plan, .quote { transition: none; }
 }

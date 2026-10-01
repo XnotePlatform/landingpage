@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
       <img src="assets/logo.png" alt="Xnote" width="471" height="215" class="logo__img">
     </a>
     <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
-      <a href="https://xnote.net/signup" class="nav__link">جرب المنصة</a>
+      <a href="https://xnote.net/signup" class="nav__link">جرب التعلم الذاتي مجانًا</a>
       <a href="#faq" class="nav__link">الأسئلة الشائعة</a>
       <a href="#voices" class="nav__link">قالوا عنا</a>
       <a href="#plans" class="btn btn--primary btn--sm nav__cta">ابدأ التعلم</a>
@@ -40,10 +40,9 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="container hero__grid">
     <div class="hero__copy">
-      <h1 id="hero-title" class="h1 reveal">
-        من الكلمات إلى <span class="u-draw">المحادثة
-          <svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg>
-        </span>
+      <h1 id="hero-title" class="h1 h1--hero reveal">
+        <span class="h1__line">من الكلمات</span>
+        <span class="h1__line">إلى <span class="u-draw">المحادثة<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span></span>
       </h1>
       <ol class="steps reveal">
         <li>في Xnote تتعلم الكلمة</li>
@@ -54,7 +53,6 @@
       </ol>
       <p class="hero__promise reveal">ابدأ من الصفر، وتقدّم حتى تتكلم بثقة.</p>
       <div class="hero__cta reveal">
-        <a href="https://xnote.net/signup" class="btn btn--primary btn--lg">ابدأ أول خطوة مجاناً</a>
         <div class="apps">
           <span class="apps__label">حمّل التطبيق</span>
           <div class="apps__row">
@@ -98,7 +96,7 @@
   <div class="container">
     <div class="section__head section__head--center reveal">
       <h2 id="video-title" class="h2">تعرّف على أسلوب Xnote في التعليم</h2>
-      <p class="sub">دقيقتان تشرحان لك كيف تسير الكلمة من الدفتر إلى لسانك.</p>
+      <p class="sub">دقيقتان تشرحان لك كيف تنتقل من تعلّم الكلمة إلى استخدامها في المحادثة.</p>
     </div>
     <div class="frame reveal">
       <span class="tape tape--l"></span><span class="tape tape--r"></span>
@@ -355,6 +353,36 @@
   </div>
 </section>
 
+<!-- ================= Fit ================= -->
+<section class="section section--cream fit-section" id="fit" aria-labelledby="fit-title">
+  <div class="container">
+    <div class="section__head section__head--center reveal">
+      <h2 id="fit-title" class="h2">هل Xnote مناسبة لك؟</h2>
+    </div>
+    <div class="fit">
+      <div class="fit__card fit__card--yes sheet reveal">
+        <span class="tape tape--l"></span>
+        <h3 class="fit__title">مناسبة لك إذا:</h3>
+        <ul class="fit__list">
+          <li>مبتدئ، أو تعرف كلمات قليلة ومتفرقة</li>
+          <li>جربت تطبيقات قبل وتركتها لأنك ما حسيت بتقدم</li>
+          <li>تبي تتكلم في مواقف بسيطة: تعارف، السفر، المطعم</li>
+          <li>وقتك محدود وتبي طريقة تعلم تمشي مع جدولك</li>
+        </ul>
+      </div>
+      <div class="fit__card fit__card--no reveal">
+        <h3 class="fit__title">غالبًا مو مناسبة لك إذا:</h3>
+        <ul class="fit__list">
+          <li>مستواك متقدم</li>
+          <li>تبحث عن وعود مثل «الطلاقة في أسبوع»</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fit__close reveal">في Xnote نبني لغتك <span class="nowrap"><span class="u-draw">خطوة بخطوة<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span>،</span> من الكلمة إلى الجملة ثم إلى المحادثة.</p>
+    <div class="fit__cta reveal"><a href="#plans" class="btn btn--primary btn--lg">أحتاج أبدأ من الصفر</a></div>
+  </div>
+</section>
+
 <!-- ================= Philosophy ================= -->
 <section class="section section--quiet philosophy-section" aria-label="فلسفة Xnote">
   <div class="container">
@@ -457,15 +485,34 @@
         <h3 class="plan__name">عرض الشهر الأول</h3>
         <p class="plan__price">
           <span class="plan__amount">50</span>
-          <span class="plan__unit"><span class="plan__cur">ريال سعودي</span><span class="plan__per">فقط</span></span>
+          <span class="plan__unit"><span class="plan__cur">ريال</span><span class="plan__per">فقط</span></span>
         </p>
         <ul class="plan__list ruled-list">
-          <li>اشتراك شهر كامل في باقة التعلم الذاتي</li>
-          <li>4 جلسات مع معلم حقيقي</li>
+          <li>شهر كامل في باقة التعلم الذاتي: كلمات، مراجعة، قصص، بودكاست</li>
+          <li>4 جلسات فردية مع معلمة حقيقية</li>
+          <li>معلمة مناسبة لمستواك، ووقت تختاره أنت</li>
+          <li>بدون تجديد تلقائي</li>
+          <li>استرداد خلال أول 7 أيام</li>
         </ul>
         <a href="https://xnote.net/signup" class="btn btn--primary btn--block">ابدأ شهرك الأول</a>
       </li>
     </ul>
+  </div>
+</section>
+
+<!-- ================= Guarantee ================= -->
+<section class="section guarantee-section" id="guarantee" aria-labelledby="guarantee-title">
+  <div class="container">
+    <div class="guarantee sheet reveal">
+      <span class="tape tape--r"></span>
+      <p class="guarantee__badge"><span class="guarantee__num">7</span><span class="guarantee__label">أيام ضمان</span></p>
+      <h2 id="guarantee-title" class="h2 guarantee__title">جرّب وأنت مرتاح</h2>
+      <div class="guarantee__text">
+        <p>إذا حسيت خلال أول 7 أيام أن Xnote ما تناسبك، تطلب الاسترداد وبس. <b class="nowrap">ما نسألك عن السبب.</b></p>
+        <p>وما فيه تجديد تلقائي. ما راح نسحب أي مبلغ من بطاقتك بدون ما تقرر أنت.</p>
+        <p class="guarantee__fine">في الباقات التي تشمل جلسات، يُخصم من المبلغ المسترد ثمن الجلسات التي حضرتها فقط. <b class="nowrap">سياسة الاسترداد</b></p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -476,7 +523,7 @@
       <span class="tape tape--l"></span><span class="tape tape--r"></span>
       <h2 id="final-title" class="h2 h2--xl">ابدأ ببناء لغتك <span class="u-draw">خطوة بخطوة<svg class="u-draw__svg" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C60 4, 120 13, 180 8 S260 3, 296 9"/></svg></span>.</h2>
       <p class="final__text">لا تحتاج أن تعرف كل شيء قبل أن تبدأ.<br>تحتاج فقط أن تعرف ما الخطوة التالية.</p>
-      <a href="https://xnote.net/signup" class="btn btn--primary btn--lg">جرب المنصة</a>
+      <a href="https://xnote.net/signup" class="btn btn--primary btn--lg">جرب التعلم الذاتي مجانًا</a>
       <div class="apps apps--center">
             <span class="apps__label">حمّل التطبيق</span>
             <div class="apps__row">
@@ -501,7 +548,7 @@
   <div class="container footer__inner">
     <img src="assets/logo.png" alt="Xnote" class="footer__logo" width="471" height="215">
     <nav aria-label="روابط الصفحة" class="footer__nav">
-      <a href="https://xnote.net/signup">جرب المنصة</a>
+      <a href="https://xnote.net/signup">جرب التعلم الذاتي مجانًا</a>
       <a href="#faq">الأسئلة الشائعة</a>
       <a href="#voices">قالوا عنا</a>
       <a href="#plans">ابدأ التعلم</a>
@@ -513,6 +560,10 @@
 <div class="mobile-cta" id="mobileCta">
   <a href="#plans" class="btn btn--primary btn--block">ابدأ مع Xnote</a>
 </div>
+
+<a class="wa-float" href="https://wa.me/966550552028?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20%D9%81%D8%B1%D9%8A%D9%82%20Xnote%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
 
 <script src="script.js?v=3" defer></script>
 </body>
