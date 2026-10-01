@@ -448,6 +448,7 @@ button { font: inherit; color: inherit; }
 .avatar { width: 58px; height: 58px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.35rem; }
 .avatar--t { background: var(--ink); color: #fff; }
 .avatar--s { background: var(--marker); color: var(--ink); }
+.avatar--photo { width: clamp(92px, 24vw, 116px); height: auto; aspect-ratio: 1; border-radius: 50%; display: block; filter: drop-shadow(0 10px 16px rgba(48, 49, 47, .16)); }
 .session__vs { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--pencil); border: 1.5px dashed rgba(245,197,78,.9); border-radius: 999px; padding: 2px 12px; }
 .session__chat { display: flex; flex-direction: column; padding: 6px 20px 18px; }
 .session__words { padding: 14px 20px 20px; border-top: 1px dashed var(--rule-strong); display: flex; flex-direction: column; gap: 10px; }
@@ -543,6 +544,7 @@ button { font: inherit; color: inherit; }
 .ruled-list li { padding: 11px 0 11px 0; border-bottom: 1px solid var(--rule-strong); display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
 .ruled-list li::before { content: ""; flex: none; width: 20px; height: 20px; margin-top: 5px; border-radius: 50%; background: var(--marker) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2330312F' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center / 12px no-repeat; }
 .ruled-list li b { font-weight: 700; white-space: nowrap; }
+.plans--single { max-width: 440px; }
 .plans__note { text-align: center; margin-top: 32px; color: var(--pencil); font-weight: 500; }
 @media (max-width: 639px) {
   .plan { padding: 32px 22px 24px; }
@@ -553,6 +555,8 @@ button { font: inherit; color: inherit; }
 @media (min-width: 800px) {
   .plans { grid-template-columns: 1fr 1fr; gap: 34px; align-items: start; }
   .plan--featured { margin-top: -14px; }
+  .plans--single { grid-template-columns: 1fr; }
+  .plans--single .plan--featured { margin-top: 0; }
 }
 
 /* ========================================================
