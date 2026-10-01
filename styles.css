@@ -465,7 +465,9 @@ button { font: inherit; color: inherit; }
 .note:nth-child(1) { --rot: -1.4deg; }
 .note:nth-child(2) { --rot: 1.1deg; background: var(--paper); }
 .note:nth-child(3) { --rot: -.7deg; }
-.who__close { margin-top: clamp(44px, 6vw, 64px); font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.6rem); max-width: 30ch; }
+.who__close { margin-top: clamp(44px, 6vw, 64px); font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.6rem); text-align: center; white-space: nowrap; }
+@media (max-width: 639px) { .who__close { white-space: normal; text-wrap: balance; } }
+.who .note { text-align: center; }
 @media (max-width: 899px) { .note:nth-child(2) { margin-inline-start: 6%; } .note:nth-child(3) { margin-inline-end: 6%; } }
 @media (min-width: 900px) { .notes { grid-template-columns: repeat(3, 1fr); gap: 34px; align-items: start; } .note:nth-child(2) { margin-top: 26px; } }
 
