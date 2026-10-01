@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -83,8 +83,8 @@
 
         <div class="sheet photo__card" dir="ltr" aria-hidden="true">
           <span class="pencil">Word</span>
-          <p class="photo__word">hungry <span class="photo__ar" dir="rtl">جائع</span></p>
-          <p class="photo__sentence">I'm <mark class="hl">hungry</mark>.</p>
+          <p class="photo__word">easy <span class="photo__ar" dir="rtl">سهل</span></p>
+          <p class="photo__sentence">English is <mark class="hl">easy</mark>.</p>
         </div>
 
         <div class="sticky sticky--hero" dir="ltr" aria-hidden="true"><span class="hand">one word<br>at a time</span></div>
@@ -186,19 +186,19 @@
 
       <div class="jstep jstep--word reveal">
         <span class="pencil">Word</span>
-        <p class="jstep__big"><mark class="hl">hungry</mark></p>
-        <span class="jstep__ar" dir="rtl">جائع</span>
+        <p class="jstep__big"><mark class="hl">easy</mark></p>
+        <span class="jstep__ar" dir="rtl">سهل</span>
       </div>
 
       <div class="jstep jstep--sentence reveal">
         <span class="pencil">Sentence</span>
-        <p class="jstep__big">I'm <mark class="hl">hungry</mark>.</p>
+        <p class="jstep__big">English is <mark class="hl">easy</mark>.</p>
       </div>
 
       <article class="sheet jstep jstep--story ruled reveal">
         <span class="tape tape--l"></span>
         <span class="pencil">Story</span>
-        <p class="jstep__story">It's 2 pm. Sami is at work. He is <mark class="hl">hungry</mark>. He opens his bag. There is no food. “I'm <mark class="hl">hungry</mark>,” he says.</p>
+        <p class="jstep__story">English is hard for Sami. Every day, he learns a new word. He reads. He listens. Now he understands. “English is <mark class="hl">easy</mark>!” he says.</p>
       </article>
 
       <div class="sheet jstep jstep--audio reveal">
@@ -213,8 +213,17 @@
       <article class="sheet jstep jstep--chat reveal">
         <span class="tape tape--r"></span>
         <span class="pencil">Practice</span>
-        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Are you hungry?</p>
-        <p class="bubble bubble--s"><span class="bubble__who">Student</span>Yes, I'm <mark class="hl">hungry</mark>.</p>
+        <figure class="call">
+          <picture>
+            <source type="image/webp" srcset="assets/practice-call-720.webp 720w, assets/practice-call.webp 1038w" sizes="(min-width: 700px) 560px, calc(100vw - 82px)">
+            <img class="call__img" src="assets/practice-call.jpg" srcset="assets/practice-call-720.jpg 720w, assets/practice-call.jpg 1038w" sizes="(min-width: 700px) 560px, calc(100vw - 82px)" width="1038" height="1008" alt="مكالمة فيديو بين معلمة وطالب أثناء جلسة ممارسة على Xnote" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Hi Sami! Is English hard?</p>
+        <p class="bubble bubble--s"><span class="bubble__who">Student</span>No! English is <mark class="hl">easy</mark> now.</p>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Really? Why?</p>
+        <p class="bubble bubble--s"><span class="bubble__who">Student</span>Every day, I learn a new word. I&nbsp;read. I&nbsp;listen.</p>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Great job!</p>
       </article>
     </div>
 
@@ -260,12 +269,12 @@
           </div>
           <div class="phone__card">
             <span class="phone__label">كلمة جديدة</span>
-            <span class="phone__word" dir="ltr">hungry</span>
-            <span class="phone__ar">جائع</span>
+            <span class="phone__word" dir="ltr">easy</span>
+            <span class="phone__ar">سهل</span>
           </div>
           <div class="phone__card phone__card--soft">
             <span class="phone__label">الجملة</span>
-            <span class="phone__sent" dir="ltr">I'm <mark class="hl">hungry</mark>.</span>
+            <span class="phone__sent" dir="ltr">English is <mark class="hl">easy</mark>.</span>
           </div>
           <div class="phone__row">
             <span class="phone__chip phone__chip--on">تعلّم</span>
@@ -279,7 +288,7 @@
       </div>
       <div class="sheet sheet--mini sheet--mini-story ruled" dir="ltr">
         <span class="pencil">Today's story</span>
-        <p>Sami is <mark class="hl">hungry</mark>. He goes to the kitchen…</p>
+        <p>Sami learns a new word. English is <mark class="hl">easy</mark> now…</p>
       </div>
       <div class="sheet sheet--mini sheet--mini-pod" dir="ltr">
         <span class="player__btn player__btn--sm"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
@@ -319,13 +328,13 @@
         <span class="avatar avatar--s">أ</span>
       </div>
       <div class="session__chat" dir="ltr">
-        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Are you hungry?</p>
-        <p class="bubble bubble--s"><span class="bubble__who">You</span>Yes, I'm <mark class="hl">hungry</mark>. I want lunch.</p>
-        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>What do you want to eat?</p>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Is English hard for you?</p>
+        <p class="bubble bubble--s"><span class="bubble__who">You</span>No! It's <mark class="hl">easy</mark> now. I learn a new word every&nbsp;day.</p>
+        <p class="bubble bubble--t"><span class="bubble__who">Teacher</span>Great! What is your new word today?</p>
       </div>
       <div class="session__words">
         <span class="session__wlabel">كلماتك في هذه الجلسة</span>
-        <span class="chips" dir="ltr"><span class="chip">hungry</span><span class="chip">lunch</span><span class="chip">eat</span><span class="chip">kitchen</span></span>
+        <span class="chips" dir="ltr"><span class="chip">easy</span><span class="chip">hard</span><span class="chip">new word</span><span class="chip">every day</span></span>
       </div>
     </div>
   </div>
