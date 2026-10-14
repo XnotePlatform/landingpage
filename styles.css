@@ -332,7 +332,7 @@ button { font: inherit; color: inherit; }
 .statement { position: relative; font-weight: 700; font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.5; max-width: 15ch; --rot: -1.5deg; transform: rotate(var(--rot)); padding: 8px 0 8px 12px; }
 .statement__arrow { position: absolute; top: -52px; inset-inline-start: 2px; width: 64px; height: 52px; fill: none; stroke: var(--marker); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; transform: scaleX(-1); }
 .statement__hand { position: absolute; top: -66px; inset-inline-start: 58px; color: var(--ink-2); }
-@media (max-width: 899px) { .statement { margin-top: 44px; } }
+@media (max-width: 899px) { .statement { margin-top: 44px; justify-self: center; text-align: center; padding-inline: 0; } .statement__arrow { inset-inline-start: 50%; margin-inline-start: -78px; } .statement__hand { inset-inline-start: 50%; margin-inline-start: -14px; } }
 @media (min-width: 900px) {
   .problem__grid { grid-template-columns: 1.1fr .9fr; gap: 72px; }
   .statement { justify-self: center; margin-top: 40px; }
@@ -593,6 +593,10 @@ button { font: inherit; color: inherit; }
   border-top: 1px solid var(--line);
   transform: translateY(110%); transition: transform var(--t-med) var(--ease);
 }
+.mobile-cta { display: flex; flex-direction: column; gap: 6px; }
+.mobile-cta__label { text-align: center; font-weight: 700; font-size: .95rem; }
+.mobile-cta .apps__row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mobile-cta .app-badge { justify-content: center; min-height: 46px; padding-block: 5px; }
 .mobile-cta.is-on { transform: translateY(0); }
 @media (min-width: 900px) { .mobile-cta { display: none; } }
 
@@ -612,6 +616,7 @@ button { font: inherit; color: inherit; }
 
 /* section headings: one line from tablets up, two even lines on phones */
 .h-split { white-space: nowrap; }
+@media (max-width: 639px) { .section__head--phone-center { text-align: center; margin-inline: auto; } }
 .h-split .h-line { display: inline; }
 .section__head:has(> .h-split) { max-width: none; }
 .section__head:has(> .h-split) .sub { max-width: 44ch; }
@@ -639,9 +644,10 @@ button { font: inherit; color: inherit; }
 .fit__card--no .fit__list li { color: var(--ink-2); }
 .fit__card--no .fit__list li::before { background: rgba(48, 49, 47, .08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234B4C49' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center / 11px no-repeat; }
 .fit__close { text-align: center; margin: clamp(40px, 5vw, 56px) auto 0; max-width: 46ch; text-wrap: balance; font-weight: 700; font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.6; }
-.fit__cta { display: flex; justify-content: center; margin-top: 26px; }
+.fit__apps { margin-top: 30px; }
+.apps__label--big { font-weight: 700; font-size: 1.15rem; color: var(--ink); }
 @media (min-width: 860px) { .fit { grid-template-columns: 1.15fr .85fr; align-items: start; gap: 34px; } .fit__card--no { margin-top: 22px; } }
-@media (max-width: 639px) { .fit__card { padding: 30px 20px 22px; } .fit__cta .btn { width: 100%; } }
+@media (max-width: 639px) { .fit__card { padding: 30px 20px 22px; } .fit__apps { align-self: stretch; } }
 
 /* ========================================================
    Floating WhatsApp button
@@ -657,7 +663,7 @@ button { font: inherit; color: inherit; }
 .wa-float svg { width: 30px; height: 30px; fill: currentColor; }
 .wa-float:hover { transform: translateY(-2px) scale(1.04); }
 /* stay above the sticky bottom CTA on phones */
-.mobile-cta.is-on ~ .wa-float { bottom: calc(86px + env(safe-area-inset-bottom)); }
+.mobile-cta.is-on ~ .wa-float { bottom: calc(108px + env(safe-area-inset-bottom)); }
 @media (min-width: 900px) { .wa-float { inset-inline-end: 28px; bottom: 28px; width: 62px; height: 62px; } }
 
 /* ========================================================
