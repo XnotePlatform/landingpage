@@ -616,7 +616,13 @@ button { font: inherit; color: inherit; }
 
 /* section headings: one line from tablets up, two even lines on phones */
 .h-split { white-space: nowrap; }
-@media (max-width: 639px) { .section__head--phone-center { text-align: center; margin-inline: auto; } }
+/* phones: every section heading block is centered */
+@media (max-width: 639px) {
+  .section__head, .section__head--phone-center { text-align: center; margin-inline: auto; }
+  .section__head .sub { margin-inline: auto; }
+  .problem__copy .h2, .problem__note { text-align: center; }
+  .practice-section .h2 { text-align: center; }
+}
 .h-split .h-line { display: inline; }
 .section__head:has(> .h-split) { max-width: none; }
 .section__head:has(> .h-split) .sub { max-width: 44ch; }
