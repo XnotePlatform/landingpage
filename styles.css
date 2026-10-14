@@ -101,6 +101,9 @@ button { font: inherit; color: inherit; }
 
 @keyframes draw { to { stroke-dashoffset: 0; } }
 
+/* keep short phrases on one line */
+.nowrap { white-space: nowrap; }
+
 /* ---------- paper ---------- */
 .sheet {
   position: relative;
@@ -381,9 +384,10 @@ button { font: inherit; color: inherit; }
 .jstep--audio .pencil { margin-bottom: 8px; }
 .jstep--chat { width: 100%; padding: 28px 30px 26px; --rot: .8deg; display: flex; flex-direction: column; }
 /* the practice call: a video-call screenshot, then the talk that happens in it */
-.call { margin: 12px 0 8px; }
+.call { margin: 12px 0 0; }
 .call__img { width: 100%; height: auto; aspect-ratio: 1038 / 1008; }
 .journey__caption { text-align: center; margin-top: 44px; font-weight: 600; font-size: 1.15rem; color: var(--pencil); }
+.journey__payoff { color: var(--ink); font-weight: 700; }
 @media (max-width: 640px) { .jstep--story, .jstep--chat { padding: 24px 20px 20px; } }
 
 /* ========================================================
