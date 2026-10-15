@@ -573,6 +573,7 @@ button { font: inherit; color: inherit; }
 .final__sheet .h2 { max-width: 16ch; }
 .final__text { color: var(--ink-2); font-weight: 500; font-size: 1.12rem; line-height: 1.8; }
 .final__sheet .btn { margin-top: 10px; }
+.final__sheet .apps--center { margin-top: 10px; }
 .final__hand { text-align: center; color: var(--marker); margin-top: 34px; font-size: 1.7rem; }
 
 /* ---------- footer ---------- */
