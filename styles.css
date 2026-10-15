@@ -436,6 +436,8 @@ button { font: inherit; color: inherit; }
 .practice__copy > p { color: var(--ink-2); font-size: 1.1rem; max-width: 46ch; margin-top: 18px; }
 .relation { margin-top: 30px !important; display: flex; flex-direction: column; gap: 4px; font-size: clamp(1.3rem, 2.2vw, 1.55rem); font-weight: 600; line-height: 1.5; color: var(--ink) !important; max-width: none !important; }
 .relation b { font-weight: 800; }
+.relation { align-items: center; text-align: center; margin-inline: auto; width: fit-content; max-width: 100%; padding: 18px 28px 16px; background: var(--paper); border: 1.5px dashed rgba(245, 197, 78, .95); border-radius: 12px; box-shadow: var(--sh-sheet); }
+@media (max-width: 639px) { .relation { width: 100%; padding: 16px 18px 14px; } }
 .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 24px; margin-top: 36px; }
 .fact { display: flex; flex-direction: column; padding-inline-start: 16px; border-inline-start: 3px solid var(--marker); }
 .fact dd { font-weight: 800; font-size: 1.5rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
@@ -526,6 +528,10 @@ button { font: inherit; color: inherit; }
 .faq__panel.is-open { grid-template-rows: 1fr; }
 .faq__panel.is-open .faq__body { visibility: visible; transition-delay: 0s; }
 .faq__body p { padding: 0 0 24px; color: var(--ink-2); font-weight: 500; max-width: 62ch; }
+.faq__steps { list-style: none; counter-reset: step; padding: 0 0 24px; max-width: 62ch; display: grid; gap: 12px; }
+.faq__steps li { counter-increment: step; position: relative; padding-inline-start: 40px; color: var(--ink-2); font-weight: 500; line-height: 1.7; }
+.faq__steps li::before { content: counter(step); position: absolute; inset-inline-start: 0; top: 2px; width: 28px; height: 28px; border-radius: 50%; background: var(--marker); color: var(--ink); font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; justify-content: center; }
+.faq__steps b { display: block; color: var(--ink); font-weight: 700; }
 .faq__body a { font-weight: 700; text-decoration: underline; text-decoration-color: var(--marker); text-decoration-thickness: 2.5px; text-underline-offset: 4px; }
 
 /* ========================================================
@@ -543,6 +549,10 @@ button { font: inherit; color: inherit; }
 .plan__unit { display: flex; flex-direction: column; line-height: 1.25; font-weight: 600; color: var(--pencil); padding-bottom: 4px; }
 .plan__cur { color: var(--ink); }
 .plan__meta { display: flex; align-items: baseline; gap: 12px; color: var(--pencil); font-weight: 500; font-size: .95rem; margin-top: 8px; }
+.plan__was { text-align: center; margin-top: 18px; }
+.plan__was .plan__old { color: #D1383A; font-weight: 700; font-size: 1.3rem; text-decoration-color: #D1383A; text-decoration-thickness: 2px; }
+.plan__price--center { justify-content: center; margin-top: 6px; }
+.plan__apps { margin-top: 4px; }
 .plan__old { text-decoration: line-through; text-decoration-color: rgba(48,49,47,.5); text-decoration-thickness: 1.5px; font-variant-numeric: tabular-nums; }
 .plan__equiv { margin-inline-start: auto; }
 .ruled-list { margin-top: 22px; margin-bottom: 26px; flex: 1; }

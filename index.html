@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
 
@@ -176,7 +176,7 @@
 <section class="section section--cream journey-section" aria-labelledby="flow-title">
   <div class="container">
     <div class="section__head section__head--center reveal">
-      <h2 id="flow-title" class="h2 h-split"><span class="h-line">من كلمة… إلى</span> <span class="h-line">لغة تستخدمها</span></h2>
+      <h2 id="flow-title" class="h2 h-split"><span class="h-line">من كلمة…</span> <span class="h-line">إلى لغة تستخدمها</span></h2>
       <p class="sub">رحلة الكلمة داخل Xnote، خطوة بخطوة حتى تستخدمها في المحادثة.</p>
     </div>
 
@@ -248,7 +248,7 @@
         </li>
         <li class="benefit reveal">
           <h3 class="h3">استمع</h3>
-          <p>استمتع بسماع لغة مفهومة من الأسبوع الأول.</p>
+          <p>محتوى صوتي يعتمد على الكلمات التي تعلمتها.</p>
         </li>
       </ul>
     </div>
@@ -477,6 +477,22 @@
         <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn">كيف تختلف Xnote عن تطبيقات تعلم اللغة الأخرى؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
         <div class="faq__panel" id="faq-7" role="region" aria-labelledby="faq-7-btn"><div class="faq__body"><p>ميزة أسلوب Xnote أنك تعيش في محيط مخزونك اللغوي بشكل مستمر: تقرأ وتسمع وتكتب شيئًا مفهومًا لك، ثم تتحدث بناءً على ما تعلمت من كلمات.</p></div></div>
       </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-8" id="faq-8-btn">متى أحدد على الكلمة <span dir="ltr" class="nowrap">I know this word</span>؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-8" role="region" aria-labelledby="faq-8-btn"><div class="faq__body">
+          <p>إذا تعلّمت كلمة جديدة لا تستعجل وتضغط مباشرة على <span dir="ltr">"I know this"</span>. ما يكفي أنك تعرف الكلمة بس، لازم تتأكد من هالأشياء قبل:</p>
+          <ol class="faq__steps">
+            <li><b>تأكد إنك تعرف تكتبها صح</b><span>إذا حسّيت إنك ما تعرف تكتبها إملائيًا حطّها بقائمة المراجعة.</span></li>
+            <li><b>تأكد من نطقها الصحيح</b><span>اسمع الكلمة أكثر من مرة وكرّرها بصوتك.</span></li>
+            <li><b>استخدمها في جملة</b><span>لا تخليها كلمة تحفظها بس، جرّب تكتب أو تقول جملة تحتوي هذه الكلمة.</span></li>
+            <li><b>تأكد إنها حاضرة في ذهنك</b><span>يعني لو سمعتها أو قرأتها تعرف معناها وتعرف كيف تستخدمها.</span></li>
+          </ol>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-9" id="faq-9-btn">هل الاستماع ساعة لراديو Xnote يوميًا يحتاج لتركيز؟<span class="faq__icon" aria-hidden="true"></span></button></h3>
+        <div class="faq__panel" id="faq-9" role="region" aria-labelledby="faq-9-btn"><div class="faq__body"><p>أبدًا، غير مهم التركيز. ممكن تستمع وأنت مشغول بترتيب غرفتك، أو غسيل صحونك، أو تمارس الرياضة. المهم حافظ على ساعة الاستماع يوميًا.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -491,11 +507,11 @@
     <ul class="plans plans--single">
       <li class="plan plan--featured sheet reveal">
         <h3 class="plan__name">عرض الشهر الأول</h3>
-        <p class="plan__price">
+        <p class="plan__was"><s class="plan__old">750 ريال</s></p>
+        <p class="plan__price plan__price--center">
           <span class="plan__amount">90</span>
           <span class="plan__unit"><span class="plan__cur">ريال</span><span class="plan__per">فقط</span></span>
         </p>
-        <p class="plan__meta"><s class="plan__old">750 ريال</s></p>
         <ul class="plan__list ruled-list">
           <li>12 جلسة تدريب وممارسة</li>
           <li>كل أسبوع 3 جلسات</li>
@@ -504,7 +520,19 @@
           <li>30 دقيقة لكل جلسة</li>
           <li>متابعة من مرشدة أكاديمية</li>
         </ul>
-        <a href="https://xnote.net/signup" class="btn btn--primary btn--block">ابدأ شهرك الأول</a>
+        <div class="apps apps--center plan__apps">
+          <span class="apps__label apps__label--big">حمّل التطبيق الآن</span>
+          <div class="apps__row">
+            <a class="app-badge" href="https://apps.apple.com/sa/app/xnote/id6757708845" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من App Store">
+              <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="app-badge__text"><small>تنزيل من</small><b dir="ltr" class="nowrap">App Store</b></span>
+            </a>
+            <a class="app-badge" href="https://play.google.com/store/apps/details?id=com.montajraqami.xnote" target="_blank" rel="noopener" aria-label="تنزيل تطبيق Xnote من Google Play">
+              <svg class="app-badge__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+              <span class="app-badge__text"><small>احصل عليه من</small><b dir="ltr">Google Play</b></span>
+            </a>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
