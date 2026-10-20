@@ -548,6 +548,10 @@ button { font: inherit; color: inherit; }
 .plan__amount { font-weight: 800; font-size: 3.3rem; line-height: .95; font-variant-numeric: tabular-nums; }
 .plan__unit { display: flex; flex-direction: column; line-height: 1.25; font-weight: 600; color: var(--pencil); padding-bottom: 4px; }
 .plan__cur { color: var(--ink); }
+/* the Saudi riyal symbol, drawn inline so it shows on every device */
+.sar { display: inline-block; width: .9em; height: .9em; fill: currentColor; vertical-align: -.1em; }
+.plan__cur .sar { width: 1.55em; height: 1.55em; vertical-align: -.2em; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .plan__meta { display: flex; align-items: baseline; gap: 12px; color: var(--pencil); font-weight: 500; font-size: .95rem; margin-top: 8px; }
 .plan__was { text-align: center; margin-top: 18px; }
 .plan__was .plan__old { color: #D1383A; font-weight: 700; font-size: 1.3rem; text-decoration-color: #D1383A; text-decoration-thickness: 2px; }
