@@ -718,6 +718,15 @@ button { font: inherit; color: inherit; }
 .biz-contact__number { display: inline-block; font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; font-variant-numeric: tabular-nums; color: var(--ink); padding: 4px 16px; border-radius: 10px; background: var(--marker-soft); }
 .biz-contact__wa { gap: 10px; }
 .biz-contact__wa svg { width: 24px; height: 24px; fill: currentColor; flex: none; }
+.biz-email { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%; max-width: 440px; margin-top: 8px; padding-top: 20px; border-top: 1.5px dashed var(--rule-strong); }
+.biz-email__label { font-weight: 600; font-size: 1rem; color: var(--pencil); }
+.biz-email__btn { display: inline-flex; align-items: center; gap: 12px; max-width: 100%; padding: 8px 16px; border-radius: 12px; border: 1.5px dashed rgba(245, 197, 78, .95); background: var(--paper); cursor: pointer; transition: transform var(--t-fast) var(--ease), background var(--t-fast), border-color var(--t-fast); }
+.biz-email__btn:hover { background: var(--marker-soft); transform: translateY(-1px); }
+.biz-email__btn.is-copied { background: var(--marker); border-color: var(--marker); border-style: solid; }
+.biz-email__img { display: block; height: 30px; width: auto; }
+.biz-email__icon { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--ink-2); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.biz-email__hint { font-weight: 600; font-size: .95rem; color: var(--pencil); min-height: 1.5em; }
+@media (max-width: 400px) { .biz-email__img { height: 24px; } .biz-email__btn { gap: 8px; padding: 7px 12px; } }
 /* Latin words inside Arabic headings keep the site's rounded font */
 .latin { font-family: var(--font); }
 @media (max-width: 639px) { .biz-card { padding: 34px 20px 26px; } .biz-contact__wa { width: 100%; } }

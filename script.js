@@ -79,6 +79,32 @@
     });
   }
 
+  // Business page: the support email is an image; a click copies the address
+  const copyBtn = document.getElementById('copyEmail');
+  if (copyBtn) {
+    const hint = document.getElementById('copyEmailHint');
+    const email = copyBtn.dataset.u + '@' + copyBtn.dataset.d;
+    const idle = hint ? hint.textContent : '';
+    let timer = null;
+    copyBtn.setAttribute('aria-label', 'نسخ البريد ' + email);
+    copyBtn.addEventListener('click', async () => {
+      let ok = false;
+      try { await navigator.clipboard.writeText(email); ok = true; } catch (e) {
+        const t = document.createElement('textarea');
+        t.value = email; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        try { ok = document.execCommand('copy'); } catch (_) { ok = false; }
+        t.remove();
+      }
+      if (!hint) return;
+      // when copying is blocked, show the address so it can be copied by hand
+      hint.textContent = ok ? 'تم نسخ البريد ✓' : email;
+      copyBtn.classList.toggle('is-copied', ok);
+      clearTimeout(timer);
+      if (ok) timer = setTimeout(() => { hint.textContent = idle; copyBtn.classList.remove('is-copied'); }, 2200);
+    });
+  }
+
   // FAQ accordion: one open at a time, animated height, keyboard accessible
   const questions = document.querySelectorAll('.faq__q');
   questions.forEach((q) => {
